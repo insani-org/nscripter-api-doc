@@ -1,0 +1,388 @@
+div#NOTICE
+{
+	width: 1000px;
+}
+body
+{
+	background-color: #ffffff;
+	font-size: 90%;
+	font-family: sans-serif;
+}
+a
+{
+	text-decoration: none;
+}
+a:link
+{
+	color: #6666FF;
+}
+
+a:visited
+{
+	color: #7560CC;
+}
+a:hover
+{
+	color: #5809FF;
+	text-decoration: underline;
+}
+div.Space
+{
+	clear: both;
+	padding-left: 1px;
+}
+span.EditDate
+{
+	font-size: 75%;
+	font-style:italic;
+}
+span.NoBr
+{
+	white-space: nowrap;
+}
+div#INDEX
+{
+	font-size: 95%;
+	font-weight: bold;
+}
+div#INDEX .Category
+{
+	font-size: 80%;
+	padding-bottom: 4px;
+}
+div#SIDEBAR
+{
+	font-size: smaller;
+}
+div#SIDEBAR.Unframed
+{
+	width: 20%;
+	float: right;
+}
+/* for list */
+div#LIST
+{
+	margin-bottom: 20px;
+}
+div#LIST.NoSidebar
+{
+	width: 100%;
+}
+div#LIST.HasSidebar
+{
+	float: left;
+	width: 79%;
+}
+.T
+{
+	background-color: #CECFFF;
+}
+.S
+{
+	background-color: #FFCCCC;
+}
+.F
+{
+	background-color: #FFFFCC;
+}
+.E
+{
+	background-color: #CCFFFF;
+}
+.FE
+{
+	background-color: #CCFFCC;
+}
+div#LIST .Word
+{
+	border-top: solid 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	width: 100%;
+	font-size: 95%;
+}
+div#LIST .WordLiteral
+{
+	float: left;
+	min-width: 18%;	/* keeps Moz happy */
+	* width: 18%;	/* keeps IE happy */
+	font-weight: bold;
+}
+div#LIST .Function
+{
+	float: left;
+	width: 80%;
+	margin-left: 2%;
+}
+/* for main */
+div#MAIN
+{
+	clear: both;
+	width: 100%;
+}
+span.WordPhonetic
+{
+	font-size: 50%;
+	margin-top: 1px;
+	margin-bottom: 0px;
+}
+div.WordName
+{
+	clear: both;
+	margin-top: 1px;
+	margin-bottom: 0px;
+}
+div.Support
+{
+	width: 100%;
+	margin-right: 1em;
+	font-size: 50%;
+}
+span.WordVersion
+{
+	float: left;
+	color: blue;
+	background-color: white;
+	margin-top: 0px;
+	margin-bottom: 1px;
+}
+span.WordField
+{
+	float: left;
+	margin-top: 1px;
+	margin-left: 5px;
+	margin-bottom: 0px;
+}
+span.EngineField
+{
+	float: left;
+	margin-top: 1px;
+	margin-left: 1em;
+	padding-left: 1em;
+	text-indent: -1em;
+	margin-bottom: 0px;
+}
+span.EngineVersion
+{
+	color: blue;
+	background-color: white;
+	margin-left: 3px;
+}
+/* hn */
+h2 /* cmd type, engine(s), name */
+{
+	* width: 100%;
+	max-width: 100%;
+	font-size: 180%;
+	font-weight: bold;
+	color: #6666ff;
+
+	background-repeat: no-repeat;
+	background-color: #DDDDFF;
+
+	padding-top: 6px;
+	padding-left: 5px;
+	padding-bottom: 4px;
+	padding-right: 0px;
+
+	margin-top: 15px;
+	margin-left: 3px;
+	margin-bottom: 0px;
+	margin-right: 3px;
+
+	border-left: #6666FF 10px solid;
+	border-bottom: #9999CC 2px solid;
+	border-right: #9999CC 2px solid;
+}
+h3 /* cmd format string */
+{
+	background-color: transparent;
+
+	* width: 95%;
+	max-width: 95%;
+	font-size: 100%;
+	color: #ff3333;
+	font-weight: bold;
+
+	padding-top: 3px;
+	padding-left: 18px;
+	text-indent: -15px; /* hanging indent */
+	padding-bottom: 3px;
+	padding-right:3px;
+
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+
+	border: #6666FF 1px solid;
+}
+h4 /* cmd category */
+{
+	background-color: #6666cc;
+
+	* width: 95%;
+	max-width: 95%;
+	font-size: 80%;
+	color: white;
+	font-weight: bold;
+
+	text-align: left;
+	vertical-align: middle;
+
+	padding-top: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-right:3px;
+
+	margin-top: 0px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+
+	border-bottom: #333399 2px solid;
+	border-right: #333399 2px solid;
+
+}
+a.WordCategory
+{
+	color: white;
+}
+a.WordCategory:link
+{
+	color: white;
+}
+a.WordCategory:visited
+{
+	color: white;
+}
+a.WordCategory:hover
+{
+	color: white;
+}
+/* Arguments */
+div.Arguments
+{
+	width: 100%;
+	font-size: 80%;
+/*	color: #ff3333; */
+	color: #cc3333;
+
+	padding-top: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-right:3px;
+
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+
+}
+span.ArgType
+{
+	float: left;
+	width: 15%;
+}
+span.ArgMeaning
+{
+	float: left;
+	width: 80%;
+	padding-left: 1em;
+}
+div.ContentBody
+{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+p.Description
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 100%;
+	width: 100%;
+}
+span.Indent
+{
+	padding-left: 2em;
+}
+div.NoticeHead
+{
+	float: left;
+	color: red;
+}
+div.NoticeBody
+{
+	margin-left: 1em;
+	margin-bottom: 1em;
+	font-size: 80%;
+	color: red;
+}
+div.Example
+{
+	clear: both;
+}
+div.ExComment
+{
+	font-size: 85%;
+}
+pre.ExSource
+{
+	margin-top: 2px;
+	background-color: #e0e0e0;
+  /* various browser-specific word-wrapping techniques */
+  white-space: pre-wrap; /* For IE and various */
+  white-space: -pre-wrap; /* For older Opera */
+  white-space: o-pre-wrap; /* For Opera */
+  white-space: -moz-pre-wrap; /* For FireFox and Mozilla Browsers */
+  word-wrap: break-word; /* For IE 5.5+ */
+}
+span.ExHeading
+{
+	font-weight: bold;
+}
+table#VALUE_EXPLANATION_TABLE
+{
+	font-size: smaller;
+}
+table#NUMBER_RANGE_TABLE
+{
+	font-size: smaller;
+}
+table#BGCOLOR_EXPLANATION_TABLE
+{
+	font-size: smaller;
+}
+table#ENGINE_EXPLANATION_TABLE
+{
+	font-size: smaller;
+}
+.grey
+{
+	background-color: #E0E0E0;
+}
+td
+{
+	padding-left: 2px;
+}
+/*
+     FILE ARCHIVED ON 16:01:33 Jun 03, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:01:24 Nov 04, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 131.058 (3)
+  esindex: 0.009
+  captures_list: 149.207
+  CDXLines.iter: 13.463 (3)
+  PetaboxLoader3.datanode: 89.796 (5)
+  exclusion.robots: 0.195
+  exclusion.robots.policy: 0.18
+  RedisCDXSource: 1.644
+  PetaboxLoader3.resolve: 271.494 (5)
+  load_resource: 313.529
+*/
