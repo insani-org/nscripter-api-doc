@@ -365,6 +365,17 @@ td
 {
 	padding-left: 2px;
 }
+hr.category /* For use in the category list */
+{
+    height: 1px;
+    border: none;
+
+    margin-top: -5px;
+    margin-bottom: -5px;
+
+    color: #888888; /* For IE */
+    background-color: #888888; /* For modern browsers */
+}
 /*
      FILE ARCHIVED ON 16:01:33 Jun 03, 2016 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 11:01:24 Nov 04, 2018.
