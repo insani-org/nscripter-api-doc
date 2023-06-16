@@ -1,473 +1,475 @@
 <html>
 <head>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<link href="napi.css" type="text/css" rel="stylesheet">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="napi.css" type="text/css" rel="stylesheet">
 </head>
 
-<div id="SIDEBAR">
-<a target="main" href="NScrAPI.html#_minus-sign">-</a><br>
-<a target="main" href="NScrAPI.html#_bang-d">!d</a><br>
-<a target="main" href="NScrAPI.html#_bang-s">!s</a><br>
-<a target="main" href="NScrAPI.html#_bang-sd">!sd</a><br>
-<a target="main" href="NScrAPI.html#_bang-w">!w</a><br>
-<a target="main" href="NScrAPI.html#_pound">#</a><br>
-<a target="main" href="NScrAPI.html#_dollarsign">$</a><br>
-<a target="main" href="NScrAPI.html#_dollarchar">$</a><br>
-<a target="main" href="NScrAPI.html#_percentsign">%</a><br>
-<a target="main" href="NScrAPI.html#_percentchar">%</a><br>
-<a target="main" href="NScrAPI.html#_parens">()</a><br>
-<a target="main" href="NScrAPI.html#_asterisk">*</a><br>
-<a target="main" href="NScrAPI.html#_multiplication-sign">*</a><br>
-<a target="main" href="NScrAPI.html#_customsel-label">*customsel</a><br>
-<a target="main" href="NScrAPI.html#_define-label">*define</a><br>
-<a target="main" href="NScrAPI.html#_start-label">*start</a><br>
-<a target="main" href="NScrAPI.html#_slash">/</a><br>
-<a target="main" href="NScrAPI.html#_division-sign">/</a><br>
-<a target="main" href="NScrAPI.html#_colon">:</a><br>
-<a target="main" href="NScrAPI.html#_semicolon">;</a><br>
-<a target="main" href="NScrAPI.html#_semicoldollar">;$</a><br>
-<a target="main" href="NScrAPI.html#_questionmark">?</a><br>
-<a target="main" href="NScrAPI.html#_questionchar">?</a><br>
-<a target="main" href="NScrAPI.html#_atsign">@</a><br>
-<a target="main" href="NScrAPI.html#_squarebrackets">[]</a><br>
-<a target="main" href="NScrAPI.html#_backslash">\</a><br>
-<a target="main" href="NScrAPI.html#_caret">^</a><br>
-<a target="main" href="NScrAPI.html#_underscore">_</a><br>
-<a target="main" href="NScrAPI.html#_backquote">`</a><br>
-<a target="main" href="NScrAPI.html#_curlybraces">{}</a><br>
-<a target="main" href="NScrAPI.html#_tilde">~</a><br>
-<a target="main" href="NScrAPI.html#_tildetag">~</a><br>
-<a target="main" href="NScrAPI.html#_plus-sign">+</a><br>
-<a target="main" href="NScrAPI.html#_anglebrackets">&lt;&gt;</a><br>
-<a target="main" href="NScrAPI.html#_hexliteral">0x</a><br>
-<a target="main" href="NScrAPI.html#abssetcursor">abssetcursor</a><br>
-<a target="main" href="NScrAPI.html#add">add</a><br>
-<a target="main" href="NScrAPI.html#addkinsoku">addkinsoku</a><br>
-<a target="main" href="NScrAPI.html#addnsadir">addnsadir</a><br>
-<a target="main" href="NScrAPI.html#allsp2hide">allsp2hide</a><br>
-<a target="main" href="NScrAPI.html#allsp2resume">allsp2resume</a><br>
-<a target="main" href="NScrAPI.html#allsphide">allsphide</a><br>
-<a target="main" href="NScrAPI.html#allspresume">allspresume</a><br>
-<a target="main" href="NScrAPI.html#amsp">amsp</a><br>
-<a target="main" href="NScrAPI.html#amsp2">amsp2</a><br>
-<a target="main" href="NScrAPI.html#arc">arc</a><br>
-<a target="main" href="NScrAPI.html#atoi">atoi</a><br>
-<a target="main" href="NScrAPI.html#autoclick">autoclick</a><br>
-<a target="main" href="NScrAPI.html#automode">automode</a><br>
-<a target="main" href="NScrAPI.html#automode_time">automode_time</a><br>
-<a target="main" href="NScrAPI.html#autosaveoff">autosaveoff</a><br>
-<a target="main" href="NScrAPI.html#avi">avi</a><br>
-<a target="main" href="NScrAPI.html#bar">bar</a><br>
-<a target="main" href="NScrAPI.html#barclear">barclear</a><br>
-<a target="main" href="NScrAPI.html#bclear">bclear</a><br>
-<a target="main" href="NScrAPI.html#bcursor">bcursor</a><br>
-<a target="main" href="NScrAPI.html#bdef">bdef</a><br>
-<a target="main" href="NScrAPI.html#bdown">bdown</a><br>
-<a target="main" href="NScrAPI.html#bexec">bexec</a><br>
-<a target="main" href="NScrAPI.html#bg">bg</a><br>
-<a target="main" href="NScrAPI.html#bgalia">bgalia</a><br>
-<a target="main" href="NScrAPI.html#bgcopy">bgcopy</a><br>
-<a target="main" href="NScrAPI.html#bgm">bgm</a><br>
-<a target="main" href="NScrAPI.html#bgmdownmode">bgmdownmode</a><br>
-<a target="main" href="NScrAPI.html#bgmfadein">bgmfadein</a><br>
-<a target="main" href="NScrAPI.html#bgmfadeout">bgmfadeout</a><br>
-<a target="main" href="NScrAPI.html#bgmonce">bgmonce</a><br>
-<a target="main" href="NScrAPI.html#bgmstop">bgmstop</a><br>
-<a target="main" href="NScrAPI.html#bgmvol">bgmvol</a><br>
-<a target="main" href="NScrAPI.html#blt">blt</a><br>
-<a target="main" href="NScrAPI.html#bmpcut">bmpcut</a><br>
-<a target="main" href="NScrAPI.html#br">br</a><br>
-<a target="main" href="NScrAPI.html#break">break</a><br>
-<a target="main" href="NScrAPI.html#bsp">bsp</a><br>
-<a target="main" href="NScrAPI.html#btime">btime</a><br>
-<a target="main" href="NScrAPI.html#btn">btn</a><br>
-<a target="main" href="NScrAPI.html#btnarea">btnarea</a><br>
-<a target="main" href="NScrAPI.html#btndef">btndef</a><br>
-<a target="main" href="NScrAPI.html#btndown">btndown</a><br>
-<a target="main" href="NScrAPI.html#btnnowindowerase">btnnowindowerase</a><br>
-<a target="main" href="NScrAPI.html#btntime">btntime</a><br>
-<a target="main" href="NScrAPI.html#btntime2">btntime2</a><br>
-<a target="main" href="NScrAPI.html#btnwait">btnwait</a><br>
-<a target="main" href="NScrAPI.html#btnwait2">btnwait2</a><br>
-<a target="main" href="NScrAPI.html#btrans">btrans</a><br>
-<a target="main" href="NScrAPI.html#bw2a">bw2a</a><br>
-<a target="main" href="NScrAPI.html#bw2a3">bw2a3</a><br>
-<a target="main" href="NScrAPI.html#caption">caption</a><br>
-<a target="main" href="NScrAPI.html#cdfadeout">cdfadeout</a><br>
-<a target="main" href="NScrAPI.html#cell">cell</a><br>
-<a target="main" href="NScrAPI.html#cellcheckexbtn">cellcheckexbtn</a><br>
-<a target="main" href="NScrAPI.html#cellcheckspbtn">cellcheckspbtn</a><br>
-<a target="main" href="NScrAPI.html#chainbmp">chainbmp</a><br>
-<a target="main" href="NScrAPI.html#checkkey">checkkey</a><br>
-<a target="main" href="NScrAPI.html#checkpage">checkpage</a><br>
-<a target="main" href="NScrAPI.html#chkcdfile">chkcdfile</a><br>
-<a target="main" href="NScrAPI.html#chkcdfile_ex">chkcdfile_ex</a><br>
-<a target="main" href="NScrAPI.html#chvol">chvol</a><br>
-<a target="main" href="NScrAPI.html#cl">cl</a><br>
-<a target="main" href="NScrAPI.html#click">click</a><br>
-<a target="main" href="NScrAPI.html#clickpos">clickpos</a><br>
-<a target="main" href="NScrAPI.html#clickskippage">clickskippage</a><br>
-<a target="main" href="NScrAPI.html#clickstr">clickstr</a><br>
-<a target="main" href="NScrAPI.html#clickvoice">clickvoice</a><br>
-<a target="main" href="NScrAPI.html#cmp">cmp</a><br>
-<a target="main" href="NScrAPI.html#cos">cos</a><br>
-<a target="main" href="NScrAPI.html#createdummy">createdummy</a><br>
-<a target="main" href="NScrAPI.html#csel">csel</a><br>
-<a target="main" href="NScrAPI.html#cselbtn">cselbtn</a><br>
-<a target="main" href="NScrAPI.html#cselgoto">cselgoto</a><br>
-<a target="main" href="NScrAPI.html#csp">csp</a><br>
-<a target="main" href="NScrAPI.html#csp2">csp2</a><br>
-<a target="main" href="NScrAPI.html#csvclose">csvclose</a><br>
-<a target="main" href="NScrAPI.html#csveof">csveof</a><br>
-<a target="main" href="NScrAPI.html#csvopen">csvopen</a><br>
-<a target="main" href="NScrAPI.html#csvread">csvread</a><br>
-<a target="main" href="NScrAPI.html#csvwrite">csvwrite</a><br>
-<a target="main" href="NScrAPI.html#date">date</a><br>
-<a target="main" href="NScrAPI.html#debuglog">debuglog</a><br>
-<a target="main" href="NScrAPI.html#dec">dec</a><br>
-<a target="main" href="NScrAPI.html#defaultfont">defaultfont</a><br>
-<a target="main" href="NScrAPI.html#defaultspeed">defaultspeed</a><br>
-<a target="main" href="NScrAPI.html#defbgmvol">defbgmvol</a><br>
-<a target="main" href="NScrAPI.html#definereset">definereset</a><br>
-<a target="main" href="NScrAPI.html#defmp3vol">defmp3vol</a><br>
-<a target="main" href="NScrAPI.html#defsevol">defsevol</a><br>
-<a target="main" href="NScrAPI.html#defsub">defsub</a><br>
-<a target="main" href="NScrAPI.html#defvoicevol">defvoicevol</a><br>
-<a target="main" href="NScrAPI.html#delay">delay</a><br>
-<a target="main" href="NScrAPI.html#deletemenu">deletemenu</a><br>
-<a target="main" href="NScrAPI.html#deletescreenshot">deletescreenshot</a><br>
-<a target="main" href="NScrAPI.html#dim">dim</a><br>
-<a target="main" href="NScrAPI.html#div">div</a><br>
-<a target="main" href="NScrAPI.html#draw">draw</a><br>
-<a target="main" href="NScrAPI.html#drawbg">drawbg</a><br>
-<a target="main" href="NScrAPI.html#drawbg2">drawbg2</a><br>
-<a target="main" href="NScrAPI.html#drawclear">drawclear</a><br>
-<a target="main" href="NScrAPI.html#drawfill">drawfill</a><br>
-<a target="main" href="NScrAPI.html#drawsp">drawsp</a><br>
-<a target="main" href="NScrAPI.html#drawsp2">drawsp2</a><br>
-<a target="main" href="NScrAPI.html#drawsp3">drawsp3</a><br>
-<a target="main" href="NScrAPI.html#drawtext">drawtext</a><br>
-<a target="main" href="NScrAPI.html#dsound">dsound</a><br>
-<a target="main" href="NScrAPI.html#dv">dv</a><br>
-<a target="main" href="NScrAPI.html#dwave">dwave</a><br>
-<a target="main" href="NScrAPI.html#dwaveload">dwaveload</a><br>
-<a target="main" href="NScrAPI.html#dwaveloop">dwaveloop</a><br>
-<a target="main" href="NScrAPI.html#dwaveplay">dwaveplay</a><br>
-<a target="main" href="NScrAPI.html#dwaveplayloop">dwaveplayloop</a><br>
-<a target="main" href="NScrAPI.html#dwavestop">dwavestop</a><br>
-<a target="main" href="NScrAPI.html#effect">effect</a><br>
-<a target="main" href="NScrAPI.html#effectblank">effectblank</a><br>
-<a target="main" href="NScrAPI.html#effectcut">effectcut</a><br>
-<a target="main" href="NScrAPI.html#effectskip">effectskip</a><br>
-<a target="main" href="NScrAPI.html#end">end</a><br>
-<a target="main" href="NScrAPI.html#english">english</a><br>
-<a target="main" href="NScrAPI.html#erasetextbtn">erasetextbtn</a><br>
-<a target="main" href="NScrAPI.html#erasetextwindow">erasetextwindow</a><br>
-<a target="main" href="NScrAPI.html#errorsave">errorsave</a><br>
-<a target="main" href="NScrAPI.html#exbtn">exbtn</a><br>
-<a target="main" href="NScrAPI.html#exbtn_d">exbtn_d</a><br>
-<a target="main" href="NScrAPI.html#exec_dll">exec_dll</a><br>
-<a target="main" href="NScrAPI.html#fchk">fchk</a><br>
-<a target="main" href="NScrAPI.html#fileexist">fileexist</a><br>
-<a target="main" href="NScrAPI.html#filelog">filelog</a><br>
-<a target="main" href="NScrAPI.html#fileremove">fileremove</a><br>
-<a target="main" href="NScrAPI.html#flushout">flushout</a><br>
-<a target="main" href="NScrAPI.html#font">font</a><br>
-<a target="main" href="NScrAPI.html#for">for</a><br>
-<a target="main" href="NScrAPI.html#game">game</a><br>
-<a target="main" href="NScrAPI.html#gameid">gameid</a><br>
-<a target="main" href="NScrAPI.html#getbtntimer">getbtntimer</a><br>
-<a target="main" href="NScrAPI.html#getbgmvol">getbgmvol</a><br>
-<a target="main" href="NScrAPI.html#getcselnum">getcselnum</a><br>
-<a target="main" href="NScrAPI.html#getcselstr">getcselstr</a><br>
-<a target="main" href="NScrAPI.html#getcursor">getcursor</a><br>
-<a target="main" href="NScrAPI.html#getcursorpos">getcursorpos</a><br>
-<a target="main" href="NScrAPI.html#getcursorpos2">getcursorpos2</a><br>
-<a target="main" href="NScrAPI.html#getenter">getenter</a><br>
-<a target="main" href="NScrAPI.html#getfunction">getfunction</a><br>
-<a target="main" href="NScrAPI.html#getini">getini</a><br>
-<a target="main" href="NScrAPI.html#getinsert">getinsert</a><br>
-<a target="main" href="NScrAPI.html#getlog">getlog</a><br>
-<a target="main" href="NScrAPI.html#getlogtext">getlogtext</a><br>
-<a target="main" href="NScrAPI.html#getmclick">getmclick</a><br>
-<a target="main" href="NScrAPI.html#getmouseover">getmouseover</a><br>
-<a target="main" href="NScrAPI.html#getmousepos">getmousepos</a><br>
-<a target="main" href="NScrAPI.html#getmp3vol">getmp3vol</a><br>
-<a target="main" href="NScrAPI.html#getnextline">getnextline</a><br>
-<a target="main" href="NScrAPI.html#getpage">getpage</a><br>
-<a target="main" href="NScrAPI.html#getparam">getparam</a><br>
-<a target="main" href="NScrAPI.html#getreg">getreg</a><br>
-<a target="main" href="NScrAPI.html#getret">getret</a><br>
-<a target="main" href="NScrAPI.html#getsavestr">getsavestr</a><br>
-<a target="main" href="NScrAPI.html#getscreenshot">getscreenshot</a><br>
-<a target="main" href="NScrAPI.html#getsevol">getsevol</a><br>
-<a target="main" href="NScrAPI.html#getskipoff">getskipoff</a><br>
-<a target="main" href="NScrAPI.html#getspmode">getspmode</a><br>
-<a target="main" href="NScrAPI.html#getspsize">getspsize</a><br>
-<a target="main" href="NScrAPI.html#gettab">gettab</a><br>
-<a target="main" href="NScrAPI.html#gettag">gettag</a><br>
-<a target="main" href="NScrAPI.html#gettaglog">gettaglog</a><br>
-<a target="main" href="NScrAPI.html#gettext">gettext</a><br>
-<a target="main" href="NScrAPI.html#gettextbtnstr">gettextbtnstr</a><br>
-<a target="main" href="NScrAPI.html#gettimer">gettimer</a><br>
-<a target="main" href="NScrAPI.html#getversion">getversion</a><br>
-<a target="main" href="NScrAPI.html#getvoicevol">getvoicevol</a><br>
-<a target="main" href="NScrAPI.html#getwindowsize">getwindowsize</a><br>
-<a target="main" href="NScrAPI.html#getzxc">getzxc</a><br>
-<a target="main" href="NScrAPI.html#globalon">globalon</a><br>
-<a target="main" href="NScrAPI.html#gosub">gosub</a><br>
-<a target="main" href="NScrAPI.html#goto">goto</a><br>
-<a target="main" href="NScrAPI.html#h_breakstr">h_breakstr</a><br>
-<a target="main" href="NScrAPI.html#h_fontstyle">h_fontstyle</a><br>
-<a target="main" href="NScrAPI.html#h_indentstr">h_indentstr</a><br>
-<a target="main" href="NScrAPI.html#h_ligate">h_ligate</a><br>
-<a target="main" href="NScrAPI.html#h_mapfont">h_mapfont</a><br>
-<a target="main" href="NScrAPI.html#h_rendering">h_rendering</a><br>
-<a target="main" href="NScrAPI.html#humanorder">humanorder</a><br>
-<a target="main" href="NScrAPI.html#humanpos">humanpos</a><br>
-<a target="main" href="NScrAPI.html#humanz">humanz</a><br>
-<a target="main" href="NScrAPI.html#if">if</a><br>
-<a target="main" href="NScrAPI.html#inc">inc</a><br>
-<a target="main" href="NScrAPI.html#indent">indent</a><br>
-<a target="main" href="NScrAPI.html#input">input</a><br>
-<a target="main" href="NScrAPI.html#inputnum">inputnum</a><br>
-<a target="main" href="NScrAPI.html#inputstr">inputstr</a><br>
-<a target="main" href="NScrAPI.html#insertmenu">insertmenu</a><br>
-<a target="main" href="NScrAPI.html#intlimit">intlimit</a><br>
-<a target="main" href="NScrAPI.html#isdown">isdown</a><br>
-<a target="main" href="NScrAPI.html#isfull">isfull</a><br>
-<a target="main" href="NScrAPI.html#ispage">ispage</a><br>
-<a target="main" href="NScrAPI.html#isskip">isskip</a><br>
-<a target="main" href="NScrAPI.html#itoa">itoa</a><br>
-<a target="main" href="NScrAPI.html#itoa2">itoa2</a><br>
-<a target="main" href="NScrAPI.html#jumpb">jumpb</a><br>
-<a target="main" href="NScrAPI.html#jumpf">jumpf</a><br>
-<a target="main" href="NScrAPI.html#kidokumode">kidokumode</a><br>
-<a target="main" href="NScrAPI.html#kidokuskip">kidokuskip</a><br>
-<a target="main" href="NScrAPI.html#killmenu">killmenu</a><br>
-<a target="main" href="NScrAPI.html#kinsoku">kinsoku</a><br>
-<a target="main" href="NScrAPI.html#labelexist">labelexist</a><br>
-<a target="main" href="NScrAPI.html#labellog">labellog</a><br>
-<a target="main" href="NScrAPI.html#language">language</a><br>
-<a target="main" href="NScrAPI.html#layermessage">layermessage</a><br>
-<a target="main" href="NScrAPI.html#lchk">lchk</a><br>
-<a target="main" href="NScrAPI.html#ld">ld</a><br>
-<a target="main" href="NScrAPI.html#len">len</a><br>
-<a target="main" href="NScrAPI.html#linepage">linepage</a><br>
-<a target="main" href="NScrAPI.html#linkcolor">linkcolor</a><br>
-<a target="main" href="NScrAPI.html#loadgame">loadgame</a><br>
-<a target="main" href="NScrAPI.html#loadgosub">loadgosub</a><br>
-<a target="main" href="NScrAPI.html#localestring">localestring</a><br>
-<a target="main" href="NScrAPI.html#locate">locate</a><br>
-<a target="main" href="NScrAPI.html#logsp">logsp</a><br>
-<a target="main" href="NScrAPI.html#logsp2">logsp2</a><br>
-<a target="main" href="NScrAPI.html#lookbackbutton">lookbackbutton</a><br>
-<a target="main" href="NScrAPI.html#lookbackcolor">lookbackcolor</a><br>
-<a target="main" href="NScrAPI.html#lookbackflush">lookbackflush</a><br>
-<a target="main" href="NScrAPI.html#lookbackoff">lookbackoff</a><br>
-<a target="main" href="NScrAPI.html#lookbackon">lookbackon</a><br>
-<a target="main" href="NScrAPI.html#lookbacksp">lookbacksp</a><br>
-<a target="main" href="NScrAPI.html#lookbackvoice">lookbackvoice</a><br>
-<a target="main" href="NScrAPI.html#loopbgm">loopbgm</a><br>
-<a target="main" href="NScrAPI.html#loopbgmstop">loopbgmstop</a><br>
-<a target="main" href="NScrAPI.html#lr_trap">lr_trap</a><br>
-<a target="main" href="NScrAPI.html#lr_trap2">lr_trap2</a><br>
-<a target="main" href="NScrAPI.html#lrclick">lrclick</a><br>
-<a target="main" href="NScrAPI.html#lsp">lsp</a><br>
-<a target="main" href="NScrAPI.html#lsp2">lsp2</a><br>
-<a target="main" href="NScrAPI.html#lsp2add">lsp2add</a><br>
-<a target="main" href="NScrAPI.html#lsp2sub">lsp2sub</a><br>
-<a target="main" href="NScrAPI.html#lsph">lsph</a><br>
-<a target="main" href="NScrAPI.html#lsph2">lsph2</a><br>
-<a target="main" href="NScrAPI.html#lsph2add">lsph2add</a><br>
-<a target="main" href="NScrAPI.html#lsph2sub">lsph2sub</a><br>
-<a target="main" href="NScrAPI.html#luacall">luacall</a><br>
-<a target="main" href="NScrAPI.html#luasub">luasub</a><br>
-<a target="main" href="NScrAPI.html#maxkaisoupage">maxkaisoupage</a><br>
-<a target="main" href="NScrAPI.html#menu_click_def">menu_click_def</a><br>
-<a target="main" href="NScrAPI.html#menu_click_page">menu_click_page</a><br>
-<a target="main" href="NScrAPI.html#menu_dwavvol">menu_dwavvol</a><br>
-<a target="main" href="NScrAPI.html#menu_full">menu_full</a><br>
-<a target="main" href="NScrAPI.html#menu_waveoff">menu_waveoff</a><br>
-<a target="main" href="NScrAPI.html#menu_waveon">menu_waveon</a><br>
-<a target="main" href="NScrAPI.html#menu_window">menu_window</a><br>
-<a target="main" href="NScrAPI.html#menuselectcolor">menuselectcolor</a><br>
-<a target="main" href="NScrAPI.html#menuselectvoice">menuselectvoice</a><br>
-<a target="main" href="NScrAPI.html#menusetwindow">menusetwindow</a><br>
-<a target="main" href="NScrAPI.html#mesbox">mesbox</a><br>
-<a target="main" href="NScrAPI.html#mid">mid</a><br>
-<a target="main" href="NScrAPI.html#minimizewindow">minimizewindow</a><br>
-<a target="main" href="NScrAPI.html#mod">mod</a><br>
-<a target="main" href="NScrAPI.html#mode_ext">mode_ext</a><br>
-<a target="main" href="NScrAPI.html#mode_saya">mode_saya</a><br>
-<a target="main" href="NScrAPI.html#mode_wave_demo">mode_wave_demo</a><br>
-<a target="main" href="NScrAPI.html#mode320">mode320</a><br>
-<a target="main" href="NScrAPI.html#mode400">mode400</a><br>
-<a target="main" href="NScrAPI.html#mode800">mode800</a><br>
-<a target="main" href="NScrAPI.html#monocro">monocro</a><br>
-<a target="main" href="NScrAPI.html#mosaicin">mosaicin</a><br>
-<a target="main" href="NScrAPI.html#mosaicout">mosaicout</a><br>
-<a target="main" href="NScrAPI.html#mousecursor">mousecursor</a><br>
-<a target="main" href="NScrAPI.html#mousemode">mousemode</a><br>
-<a target="main" href="NScrAPI.html#mov">mov</a><br>
-<a target="main" href="NScrAPI.html#mov10">mov10</a><br>
-<a target="main" href="NScrAPI.html#mov3">mov3</a><br>
-<a target="main" href="NScrAPI.html#mov4">mov4</a><br>
-<a target="main" href="NScrAPI.html#mov5">mov5</a><br>
-<a target="main" href="NScrAPI.html#mov6">mov6</a><br>
-<a target="main" href="NScrAPI.html#mov7">mov7</a><br>
-<a target="main" href="NScrAPI.html#mov8">mov8</a><br>
-<a target="main" href="NScrAPI.html#mov9">mov9</a><br>
-<a target="main" href="NScrAPI.html#movemousecursor">movemousecursor</a><br>
-<a target="main" href="NScrAPI.html#movie">movie</a><br>
-<a target="main" href="NScrAPI.html#movl">movl</a><br>
-<a target="main" href="NScrAPI.html#mp3">mp3</a><br>
-<a target="main" href="NScrAPI.html#mp3fadein">mp3fadein</a><br>
-<a target="main" href="NScrAPI.html#mp3fadeout">mp3fadeout</a><br>
-<a target="main" href="NScrAPI.html#mp3loop">mp3loop</a><br>
-<a target="main" href="NScrAPI.html#mp3save">mp3save</a><br>
-<a target="main" href="NScrAPI.html#mp3stop">mp3stop</a><br>
-<a target="main" href="NScrAPI.html#mp3vol">mp3vol</a><br>
-<a target="main" href="NScrAPI.html#mpegplay">mpegplay</a><br>
-<a target="main" href="NScrAPI.html#msp">msp</a><br>
-<a target="main" href="NScrAPI.html#msp2">msp2</a><br>
-<a target="main" href="NScrAPI.html#mul">mul</a><br>
-<a target="main" href="NScrAPI.html#mv">mv</a><br>
-<a target="main" href="NScrAPI.html#nega">nega</a><br>
-<a target="main" href="NScrAPI.html#next">next</a><br>
-<a target="main" href="NScrAPI.html#nextcsel">nextcsel</a><br>
-<a target="main" href="NScrAPI.html#noloaderror">noloaderror</a><br>
-<a target="main" href="NScrAPI.html#noteraseman">noteraseman</a><br>
-<a target="main" href="NScrAPI.html#notif">notif</a><br>
-<a target="main" href="NScrAPI.html#nsa">nsa</a><br>
-<a target="main" href="NScrAPI.html#nsadir">nsadir</a><br>
-<a target="main" href="NScrAPI.html#numalias">numalias</a><br>
-<a target="main" href="NScrAPI.html#ofscpy">ofscpy</a><br>
-<a target="main" href="NScrAPI.html#okcancelbox">okcancelbox</a><br>
-<a target="main" href="NScrAPI.html#pagetag">pagetag</a><br>
-<a target="main" href="NScrAPI.html#pbreakstr">pbreakstr</a><br>
-<a target="main" href="NScrAPI.html#pfontstyle">pfontstyle</a><br>
-<a target="main" href="NScrAPI.html#pindentstr">pindentstr</a><br>
-<a target="main" href="NScrAPI.html#play">play</a><br>
-<a target="main" href="NScrAPI.html#playonce">playonce</a><br>
-<a target="main" href="NScrAPI.html#playstop">playstop</a><br>
-<a target="main" href="NScrAPI.html#pligate">pligate</a><br>
-<a target="main" href="NScrAPI.html#pmapfont">pmapfont</a><br>
-<a target="main" href="NScrAPI.html#prendering">prendering</a><br>
-<a target="main" href="NScrAPI.html#pretextgosub">pretextgosub</a><br>
-<a target="main" href="NScrAPI.html#print">print</a><br>
-<a target="main" href="NScrAPI.html#prnum">prnum</a><br>
-<a target="main" href="NScrAPI.html#prnumclear">prnumclear</a><br>
-<a target="main" href="NScrAPI.html#puttext">puttext</a><br>
-<a target="main" href="NScrAPI.html#quake">quake</a><br>
-<a target="main" href="NScrAPI.html#quakex">quakex</a><br>
-<a target="main" href="NScrAPI.html#quakey">quakey</a><br>
-<a target="main" href="NScrAPI.html#r_trap">r_trap</a><br>
-<a target="main" href="NScrAPI.html#readfile">readfile</a><br>
-<a target="main" href="NScrAPI.html#repaint">repaint</a><br>
-<a target="main" href="NScrAPI.html#reset">reset</a><br>
-<a target="main" href="NScrAPI.html#resetmenu">resetmenu</a><br>
-<a target="main" href="NScrAPI.html#resettimer">resettimer</a><br>
-<a target="main" href="NScrAPI.html#return">return</a><br>
-<a target="main" href="NScrAPI.html#rgosub">rgosub</a><br>
-<a target="main" href="NScrAPI.html#rlookback">rlookback</a><br>
-<a target="main" href="NScrAPI.html#rmenu">rmenu</a><br>
-<a target="main" href="NScrAPI.html#rmode">rmode</a><br>
-<a target="main" href="NScrAPI.html#rnd">rnd</a><br>
-<a target="main" href="NScrAPI.html#rnd2">rnd2</a><br>
-<a target="main" href="NScrAPI.html#roff">roff</a><br>
-<a target="main" href="NScrAPI.html#rubyoff">rubyoff</a><br>
-<a target="main" href="NScrAPI.html#rubyon">rubyon</a><br>
-<a target="main" href="NScrAPI.html#rubyon2">rubyon2</a><br>
-<a target="main" href="NScrAPI.html#savedir">savedir</a><br>
-<a target="main" href="NScrAPI.html#savefileexist">savefileexist</a><br>
-<a target="main" href="NScrAPI.html#savegame">savegame</a><br>
-<a target="main" href="NScrAPI.html#savegame2">savegame2</a><br>
-<a target="main" href="NScrAPI.html#savename">savename</a><br>
-<a target="main" href="NScrAPI.html#savenumber">savenumber</a><br>
-<a target="main" href="NScrAPI.html#saveoff">saveoff</a><br>
-<a target="main" href="NScrAPI.html#saveon">saveon</a><br>
-<a target="main" href="NScrAPI.html#savepoint">savepoint</a><br>
-<a target="main" href="NScrAPI.html#savescreenshot">savescreenshot</a><br>
-<a target="main" href="NScrAPI.html#savescreenshot2">savescreenshot2</a><br>
-<a target="main" href="NScrAPI.html#savetime">savetime</a><br>
-<a target="main" href="NScrAPI.html#select">select</a><br>
-<a target="main" href="NScrAPI.html#selectbtnwait">selectbtnwait</a><br>
-<a target="main" href="NScrAPI.html#selectcolor">selectcolor</a><br>
-<a target="main" href="NScrAPI.html#selectvoice">selectvoice</a><br>
-<a target="main" href="NScrAPI.html#selgosub">selgosub</a><br>
-<a target="main" href="NScrAPI.html#selnum">selnum</a><br>
-<a target="main" href="NScrAPI.html#setcursor">setcursor</a><br>
-<a target="main" href="NScrAPI.html#seteffectspeed">seteffectspeed</a><br>
-<a target="main" href="NScrAPI.html#setkinsoku">setkinsoku</a><br>
-<a target="main" href="NScrAPI.html#setlayer">setlayer</a><br>
-<a target="main" href="NScrAPI.html#setwindow">setwindow</a><br>
-<a target="main" href="NScrAPI.html#setwindow2">setwindow2</a><br>
-<a target="main" href="NScrAPI.html#setwindow3">setwindow3</a><br>
-<a target="main" href="NScrAPI.html#sevol">sevol</a><br>
-<a target="main" href="NScrAPI.html#shadedistance">shadedistance</a><br>
-<a target="main" href="NScrAPI.html#shell">shell</a><br>
-<a target="main" href="NScrAPI.html#sin">sin</a><br>
-<a target="main" href="NScrAPI.html#skip">skip</a><br>
-<a target="main" href="NScrAPI.html#skipoff">skipoff</a><br>
-<a target="main" href="NScrAPI.html#soundpressplgin">soundpressplgin</a><br>
-<a target="main" href="NScrAPI.html#spbtn">spbtn</a><br>
-<a target="main" href="NScrAPI.html#spclclk">spclclk</a><br>
-<a target="main" href="NScrAPI.html#spfont">spfont</a><br>
-<a target="main" href="NScrAPI.html#spi">spi</a><br>
-<a target="main" href="NScrAPI.html#split">split</a><br>
-<a target="main" href="NScrAPI.html#spstr">spstr</a><br>
-<a target="main" href="NScrAPI.html#spwait">spwait</a><br>
-<a target="main" href="NScrAPI.html#stop">stop</a><br>
-<a target="main" href="NScrAPI.html#stralias">stralias</a><br>
-<a target="main" href="NScrAPI.html#strsp">strsp</a><br>
-<a target="main" href="NScrAPI.html#strsph">strsph</a><br>
-<a target="main" href="NScrAPI.html#sub">sub</a><br>
-<a target="main" href="NScrAPI.html#systemcall">systemcall</a><br>
-<a target="main" href="NScrAPI.html#tablegoto">tablegoto</a><br>
-<a target="main" href="NScrAPI.html#tal">tal</a><br>
-<a target="main" href="NScrAPI.html#tan">tan</a><br>
-<a target="main" href="NScrAPI.html#tateyoko">tateyoko</a><br>
-<a target="main" href="NScrAPI.html#texec">texec</a><br>
-<a target="main" href="NScrAPI.html#texec2">texec2</a><br>
-<a target="main" href="NScrAPI.html#textbtnoff">textbtnoff</a><br>
-<a target="main" href="NScrAPI.html#textbtnstart">textbtnstart</a><br>
-<a target="main" href="NScrAPI.html#textbtnwait">textbtnwait</a><br>
-<a target="main" href="NScrAPI.html#textclear">textclear</a><br>
-<a target="main" href="NScrAPI.html#textcolor">textcolor</a><br>
-<a target="main" href="NScrAPI.html#textexbtn">textexbtn</a><br>
-<a target="main" href="NScrAPI.html#textfield">textfield</a><br>
-<a target="main" href="NScrAPI.html#textgosub">textgosub</a><br>
-<a target="main" href="NScrAPI.html#texthide">texthide</a><br>
-<a target="main" href="NScrAPI.html#textoff">textoff</a><br>
-<a target="main" href="NScrAPI.html#texton">texton</a><br>
-<a target="main" href="NScrAPI.html#textshow">textshow</a><br>
-<a target="main" href="NScrAPI.html#textspeed">textspeed</a><br>
-<a target="main" href="NScrAPI.html#textspeeddefault">textspeeddefault</a><br>
-<a target="main" href="NScrAPI.html#time">time</a><br>
-<a target="main" href="NScrAPI.html#transbtn">transbtn</a><br>
-<a target="main" href="NScrAPI.html#transmode">transmode</a><br>
-<a target="main" href="NScrAPI.html#trap">trap</a><br>
-<a target="main" href="NScrAPI.html#trap2">trap2</a><br>
-<a target="main" href="NScrAPI.html#underline">underline</a><br>
-<a target="main" href="NScrAPI.html#useescspc">useescspc</a><br>
-<a target="main" href="NScrAPI.html#usewheel">usewheel</a><br>
-<a target="main" href="NScrAPI.html#v">v</a><br>
-<a target="main" href="NScrAPI.html#value">value</a><br>
-<a target="main" href="NScrAPI.html#versionstr">versionstr</a><br>
-<a target="main" href="NScrAPI.html#voicevol">voicevol</a><br>
-<a target="main" href="NScrAPI.html#vsp">vsp</a><br>
-<a target="main" href="NScrAPI.html#vsp2">vsp2</a><br>
-<a target="main" href="NScrAPI.html#wait">wait</a><br>
-<a target="main" href="NScrAPI.html#waittimer">waittimer</a><br>
-<a target="main" href="NScrAPI.html#wave">wave</a><br>
-<a target="main" href="NScrAPI.html#waveloop">waveloop</a><br>
-<a target="main" href="NScrAPI.html#wavestop">wavestop</a><br>
-<a target="main" href="NScrAPI.html#windowback">windowback</a><br>
-<a target="main" href="NScrAPI.html#windowchip">windowchip</a><br>
-<a target="main" href="NScrAPI.html#windoweffect">windoweffect</a><br>
-<a target="main" href="NScrAPI.html#winexec">winexec</a><br>
-<a target="main" href="NScrAPI.html#yesnobox">yesnobox</a><br>
-<a target="main" href="NScrAPI.html#zenkakko">zenkakko</a><br>
-</div>
+<body>
+    <div id="SIDEBAR">
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_minus-sign">-</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_bang-d">!d</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_bang-s">!s</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_bang-sd">!sd</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_bang-w">!w</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_pound">#</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_dollarsign">$</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_dollarchar">$</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_percentsign">%</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_percentchar">%</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_parens">()</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_asterisk">*</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_multiplication-sign">*</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_customsel-label">*customsel</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_define-label">*define</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_start-label">*start</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_slash">/</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_division-sign">/</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_colon">:</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_semicolon">;</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_semicoldollar">;$</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_questionmark">?</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_questionchar">?</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_atsign">@</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_squarebrackets">[]</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_backslash">\</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_caret">^</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_underscore">_</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_backquote">`</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_curlybraces">{}</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_tilde">~</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_tildetag">~</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_plus-sign">+</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_anglebrackets">&lt;&gt;</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#_hexliteral">0x</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#abssetcursor">abssetcursor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#add">add</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#addkinsoku">addkinsoku</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#addnsadir">addnsadir</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#allsp2hide">allsp2hide</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#allsp2resume">allsp2resume</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#allsphide">allsphide</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#allspresume">allspresume</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#amsp">amsp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#amsp2">amsp2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#arc">arc</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#atoi">atoi</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#autoclick">autoclick</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#automode">automode</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#automode_time">automode_time</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#autosaveoff">autosaveoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#avi">avi</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bar">bar</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#barclear">barclear</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bclear">bclear</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bcursor">bcursor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bdef">bdef</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bdown">bdown</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bexec">bexec</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bg">bg</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgalia">bgalia</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgcopy">bgcopy</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgm">bgm</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgmdownmode">bgmdownmode</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgmfadein">bgmfadein</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgmfadeout">bgmfadeout</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgmonce">bgmonce</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgmstop">bgmstop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bgmvol">bgmvol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#blt">blt</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bmpcut">bmpcut</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#br">br</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#break">break</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bsp">bsp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btime">btime</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btn">btn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btnarea">btnarea</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btndef">btndef</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btndown">btndown</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btnnowindowerase">btnnowindowerase</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btntime">btntime</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btntime2">btntime2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btnwait">btnwait</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btnwait2">btnwait2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#btrans">btrans</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bw2a">bw2a</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#bw2a3">bw2a3</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#caption">caption</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cdfadeout">cdfadeout</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cell">cell</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cellcheckexbtn">cellcheckexbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cellcheckspbtn">cellcheckspbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#chainbmp">chainbmp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#checkkey">checkkey</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#checkpage">checkpage</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#chkcdfile">chkcdfile</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#chkcdfile_ex">chkcdfile_ex</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#chvol">chvol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cl">cl</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#click">click</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#clickpos">clickpos</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#clickskippage">clickskippage</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#clickstr">clickstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#clickvoice">clickvoice</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cmp">cmp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cos">cos</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#createdummy">createdummy</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csel">csel</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cselbtn">cselbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#cselgoto">cselgoto</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csp">csp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csp2">csp2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csvclose">csvclose</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csveof">csveof</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csvopen">csvopen</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csvread">csvread</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#csvwrite">csvwrite</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#date">date</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#debuglog">debuglog</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dec">dec</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#defaultfont">defaultfont</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#defaultspeed">defaultspeed</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#defbgmvol">defbgmvol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#definereset">definereset</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#defmp3vol">defmp3vol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#defsevol">defsevol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#defsub">defsub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#defvoicevol">defvoicevol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#delay">delay</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#deletemenu">deletemenu</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#deletescreenshot">deletescreenshot</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dim">dim</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#div">div</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#draw">draw</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawbg">drawbg</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawbg2">drawbg2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawclear">drawclear</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawfill">drawfill</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawsp">drawsp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawsp2">drawsp2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawsp3">drawsp3</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#drawtext">drawtext</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dsound">dsound</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dv">dv</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dwave">dwave</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dwaveload">dwaveload</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dwaveloop">dwaveloop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dwaveplay">dwaveplay</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dwaveplayloop">dwaveplayloop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#dwavestop">dwavestop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#effect">effect</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#effectblank">effectblank</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#effectcut">effectcut</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#effectskip">effectskip</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#end">end</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#english">english</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#erasetextbtn">erasetextbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#erasetextwindow">erasetextwindow</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#errorsave">errorsave</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#exbtn">exbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#exbtn_d">exbtn_d</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#exec_dll">exec_dll</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#fchk">fchk</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#fileexist">fileexist</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#filelog">filelog</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#fileremove">fileremove</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#flushout">flushout</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#font">font</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#for">for</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#game">game</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gameid">gameid</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getbtntimer">getbtntimer</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getbgmvol">getbgmvol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getcselnum">getcselnum</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getcselstr">getcselstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getcursor">getcursor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getcursorpos">getcursorpos</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getcursorpos2">getcursorpos2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getenter">getenter</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getfunction">getfunction</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getini">getini</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getinsert">getinsert</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getlog">getlog</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getlogtext">getlogtext</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getmclick">getmclick</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getmouseover">getmouseover</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getmousepos">getmousepos</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getmp3vol">getmp3vol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getnextline">getnextline</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getpage">getpage</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getparam">getparam</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getreg">getreg</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getret">getret</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getsavestr">getsavestr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getscreenshot">getscreenshot</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getsevol">getsevol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getskipoff">getskipoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getspmode">getspmode</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getspsize">getspsize</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gettab">gettab</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gettag">gettag</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gettaglog">gettaglog</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gettext">gettext</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gettextbtnstr">gettextbtnstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gettimer">gettimer</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getversion">getversion</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getvoicevol">getvoicevol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getwindowsize">getwindowsize</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#getzxc">getzxc</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#globalon">globalon</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#gosub">gosub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#goto">goto</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#h_breakstr">h_breakstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#h_fontstyle">h_fontstyle</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#h_indentstr">h_indentstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#h_ligate">h_ligate</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#h_mapfont">h_mapfont</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#h_rendering">h_rendering</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#humanorder">humanorder</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#humanpos">humanpos</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#humanz">humanz</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#if">if</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#inc">inc</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#indent">indent</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#input">input</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#inputnum">inputnum</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#inputstr">inputstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#insertmenu">insertmenu</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#intlimit">intlimit</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#isdown">isdown</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#isfull">isfull</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#ispage">ispage</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#isskip">isskip</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#itoa">itoa</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#itoa2">itoa2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#jumpb">jumpb</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#jumpf">jumpf</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#kidokumode">kidokumode</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#kidokuskip">kidokuskip</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#killmenu">killmenu</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#kinsoku">kinsoku</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#labelexist">labelexist</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#labellog">labellog</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#language">language</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#layermessage">layermessage</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lchk">lchk</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#ld">ld</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#len">len</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#linepage">linepage</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#linkcolor">linkcolor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#loadgame">loadgame</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#loadgosub">loadgosub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#localestring">localestring</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#locate">locate</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#logsp">logsp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#logsp2">logsp2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lookbackbutton">lookbackbutton</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lookbackcolor">lookbackcolor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lookbackflush">lookbackflush</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lookbackoff">lookbackoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lookbackon">lookbackon</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lookbacksp">lookbacksp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lookbackvoice">lookbackvoice</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#loopbgm">loopbgm</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#loopbgmstop">loopbgmstop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lr_trap">lr_trap</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lr_trap2">lr_trap2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lrclick">lrclick</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsp">lsp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsp2">lsp2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsp2add">lsp2add</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsp2sub">lsp2sub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsph">lsph</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsph2">lsph2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsph2add">lsph2add</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#lsph2sub">lsph2sub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#luacall">luacall</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#luasub">luasub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#maxkaisoupage">maxkaisoupage</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menu_click_def">menu_click_def</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menu_click_page">menu_click_page</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menu_dwavvol">menu_dwavvol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menu_full">menu_full</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menu_waveoff">menu_waveoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menu_waveon">menu_waveon</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menu_window">menu_window</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menuselectcolor">menuselectcolor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menuselectvoice">menuselectvoice</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#menusetwindow">menusetwindow</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mesbox">mesbox</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mid">mid</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#minimizewindow">minimizewindow</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mod">mod</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mode_ext">mode_ext</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mode_saya">mode_saya</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mode_wave_demo">mode_wave_demo</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mode320">mode320</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mode400">mode400</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mode800">mode800</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#monocro">monocro</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mosaicin">mosaicin</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mosaicout">mosaicout</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mousecursor">mousecursor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mousemode">mousemode</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov">mov</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov10">mov10</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov3">mov3</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov4">mov4</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov5">mov5</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov6">mov6</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov7">mov7</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov8">mov8</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mov9">mov9</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#movemousecursor">movemousecursor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#movie">movie</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#movl">movl</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mp3">mp3</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mp3fadein">mp3fadein</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mp3fadeout">mp3fadeout</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mp3loop">mp3loop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mp3save">mp3save</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mp3stop">mp3stop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mp3vol">mp3vol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mpegplay">mpegplay</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#msp">msp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#msp2">msp2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mul">mul</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#mv">mv</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#nega">nega</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#next">next</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#nextcsel">nextcsel</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#noloaderror">noloaderror</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#noteraseman">noteraseman</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#notif">notif</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#nsa">nsa</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#nsadir">nsadir</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#numalias">numalias</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#ofscpy">ofscpy</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#okcancelbox">okcancelbox</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#pagetag">pagetag</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#pbreakstr">pbreakstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#pfontstyle">pfontstyle</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#pindentstr">pindentstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#play">play</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#playonce">playonce</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#playstop">playstop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#pligate">pligate</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#pmapfont">pmapfont</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#prendering">prendering</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#pretextgosub">pretextgosub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#print">print</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#prnum">prnum</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#prnumclear">prnumclear</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#puttext">puttext</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#quake">quake</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#quakex">quakex</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#quakey">quakey</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#r_trap">r_trap</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#readfile">readfile</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#repaint">repaint</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#reset">reset</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#resetmenu">resetmenu</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#resettimer">resettimer</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#return">return</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rgosub">rgosub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rlookback">rlookback</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rmenu">rmenu</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rmode">rmode</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rnd">rnd</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rnd2">rnd2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#roff">roff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rubyoff">rubyoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rubyon">rubyon</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#rubyon2">rubyon2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savedir">savedir</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savefileexist">savefileexist</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savegame">savegame</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savegame2">savegame2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savename">savename</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savenumber">savenumber</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#saveoff">saveoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#saveon">saveon</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savepoint">savepoint</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savescreenshot">savescreenshot</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savescreenshot2">savescreenshot2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#savetime">savetime</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#select">select</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#selectbtnwait">selectbtnwait</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#selectcolor">selectcolor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#selectvoice">selectvoice</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#selgosub">selgosub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#selnum">selnum</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#setcursor">setcursor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#seteffectspeed">seteffectspeed</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#setkinsoku">setkinsoku</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#setlayer">setlayer</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#setwindow">setwindow</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#setwindow2">setwindow2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#setwindow3">setwindow3</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#sevol">sevol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#shadedistance">shadedistance</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#shell">shell</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#sin">sin</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#skip">skip</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#skipoff">skipoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#soundpressplgin">soundpressplgin</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#spbtn">spbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#spclclk">spclclk</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#spfont">spfont</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#spi">spi</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#split">split</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#spstr">spstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#spwait">spwait</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#stop">stop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#stralias">stralias</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#strsp">strsp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#strsph">strsph</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#sub">sub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#systemcall">systemcall</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#tablegoto">tablegoto</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#tal">tal</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#tan">tan</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#tateyoko">tateyoko</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#texec">texec</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#texec2">texec2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textbtnoff">textbtnoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textbtnstart">textbtnstart</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textbtnwait">textbtnwait</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textclear">textclear</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textcolor">textcolor</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textexbtn">textexbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textfield">textfield</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textgosub">textgosub</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#texthide">texthide</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textoff">textoff</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#texton">texton</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textshow">textshow</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textspeed">textspeed</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#textspeeddefault">textspeeddefault</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#time">time</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#transbtn">transbtn</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#transmode">transmode</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#trap">trap</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#trap2">trap2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#underline">underline</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#useescspc">useescspc</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#usewheel">usewheel</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#v">v</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#value">value</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#versionstr">versionstr</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#voicevol">voicevol</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#vsp">vsp</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#vsp2">vsp2</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#wait">wait</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#waittimer">waittimer</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#wave">wave</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#waveloop">waveloop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#wavestop">wavestop</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#windowback">windowback</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#windowchip">windowchip</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#windoweffect">windoweffect</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#winexec">winexec</a><p>
+        <p class="sidebar"><a target="main" href="NScrAPI.html#yesnobox">yesnobox</a><p>
+        <p><a target="main" href="NScrAPI.html#zenkakko">zenkakko</a><p>
+    </div>
+</body>
 </html>

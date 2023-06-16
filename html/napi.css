@@ -376,6 +376,10 @@ hr.category /* For use in the category list */
     color: #888888; /* For IE */
     background-color: #888888; /* For modern browsers */
 }
+p.sidebar /* For use in command sidebar */
+{
+    margin-bottom: -10px;
+}
 /*
      FILE ARCHIVED ON 16:01:33 Jun 03, 2016 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 11:01:24 Nov 04, 2018.
