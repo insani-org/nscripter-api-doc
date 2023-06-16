@@ -4895,7 +4895,12 @@ Similarly, menu items "Version Info" and "Exit" start as numbers 8 and 9, respec
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="kinsoku"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
+<!--
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.73</span></span>, <span class="NoBr">ONScr-EN )</span></span></div>
+
+I'm pretty sure that onsen doesn't support this command. -Galladite 2023-6-16
+--!>
+<span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.73</span> )</span></span></div>
 <div class="WordName">kinsoku</div></h2><h4><a href="#category_drawtext" class="WordCategory">Text Display</a></h4>
 <h3>kinsoku {on,off}</h3>
 <div class="Arguments">
@@ -4904,7 +4909,9 @@ Similarly, menu items "Version Info" and "Exit" start as numbers 8 and 9, respec
 <b>kinsoku on</b> causes "kinsoku" (forbidden start/end character) rules to be enforced, while <b>kinsoku off</b> causes those rules to be ignored.</p>
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">This works with both regular text display and the <b>strsp</b> command. (by senzogawa)</div></div>
-<hr><a href="#strsp">strsp</a> / 
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">ONScripter-EN was falsely reported to support this command. I'm pretty sure you can't turn it off, but you can set there to be no kinsoku characters using the <b>setkinsoku</b> command. (by Galladite)</div></div>
+<hr><a href="#strsp">strsp</a> / <a href="#setkinsoku">setkinsoku</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="labelexist"></a><h2><div class="Support"><span class="WordVersion">Ver.(undoc)</span><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
@@ -7569,7 +7576,7 @@ Specifies the speed of effects.</p>
 <a id="setkinsoku"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.70</span></span>, <span class="NoBr">ONScr-EN )</span></span></div>
 <div class="WordName">setkinsoku</div></h2><h4><a href="#category_drawtext" class="WordCategory">Text Display</a></h4>
-<h3>addkinsoku STR,STR</h3>
+<h3>setkinsoku STR,STR</h3>
 <div class="Arguments">
 <span class="ArgType">STR</span><span class="ArgMeaning">String of characters forbidden at line start</span><div class="Space"></div>
 <span class="ArgType">STR</span><span class="ArgMeaning">String of characters forbidden at line end</span><div class="Space"></div></div>
@@ -7578,8 +7585,12 @@ Much as English has linebreak rules, Japanese defines certain characters as "kin
 <br>
 This command specifies which (fullwidth) text characters will be treated as "kinsoku" for the purposes of text display: the first string contains characters forbidden at the start of a line, while the second string contains characters to be forbidden at the end of a line.<br>
 <br>
-The default kinsoku characters for NScripter are "」』）］｝、。，．・？！ヽヾゝゞ々ー" (start) and "「『（［｛" (end).</p>
-<hr><a href="#addkinsoku">addkinsoku</a> / 
+The default kinsoku characters for NScripter are "」』）］｝、。，．・？！ヽヾゝゞ々ー" (start) and "「『（［｛" (end).<br>
+<br>
+Kinsoku can be enabled or disabled using the <b>kinsoku</b> command.</p>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">The <b>kinsoku</b> command does not exist in ONScripter-EN. (by Galladite)</div></div>
+<hr><a href="#addkinsoku">addkinsoku</a> / <a href="#kinsoku">kinsoku</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="setlayer"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition Block Only]</span></span>
