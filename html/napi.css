@@ -380,10 +380,6 @@ hr.category /* For use in the category list */
     color: #888888; /* For IE */
     background-color: #888888; /* For modern browsers */
 }
-p.category /* For use in the category list */
-{
-    font-weight: bold;
-}
 p.sidebar /* For use in command sidebar */
 {
     margin-bottom: -10px;
