@@ -1,72 +1,73 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<title>*NScripter API Reference [compiled by senzogawa, translated by gp32 and Mion, further revised and translated by chaoskaiser72]</title>
-<link rel="shortcut icon" href="onsen.gif" type="image/vnd.microsoft.icon">
-<link href="napi.css" type="text/css" rel="stylesheet">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>*NScripter API Reference [compiled by senzogawa, translated by gp32 and Mion, further revised and translated by chaoskaiser72]</title>
+    <link rel="shortcut icon" href="onsen.gif" type="image/vnd.microsoft.icon">
+    <link href="napi.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
-<div id="HEADER"><a id="top" name="top"></a>
-<span class="EditDate">Last edited 05 / 17 / 2023</span>
-
-<h5>Background Color Explanations</h5>
-<table id="BGCOLOR_EXPLANATION_TABLE"><col span="1" width="100"><col span="1"><tbody>
-<tr><td class="S">Reserved Syntax</td><td>Keywords or labels with predefined functions</td></tr>
-<tr><td class="F">F Commands</td><td>Commands that may be used only in the definition block</td></tr>
-<tr><td class="E">E Commands</td><td>Commands that may be used only in the program block</td></tr>
-<tr><td class="FE">F/E Commands</td><td>Commands that may be used in the program or the definition block</td></tr>
-<tr><td class="T">Special Text Commands</td><td>Special characters that may be used as command substitutes within displayed text blocks</td></tr>
-</tbody></table>
-
-<h5>Argument Type Explanations</h5>
-<table id="VALUE_EXPLANATION_TABLE"><col class="grey" span="1" width="100"><col span="1"><tbody>
-<tr><td>NAME</td><td>Case-insensitive string of alphanumerics and/or '_'; must begin with an alphabet letter or '_'</td></tr>
-<tr><td>LABEL</td><td>Character string consisting of '*' followed by a NAME</td></tr>
-<tr><td>NUM</td><td>Numeric expression: string(s) of numeric digits possibly connected by any of the operators '+', '-', '*', '/'</td></tr>
-<tr><td>STR</td><td>Character string enclosed by '"'s; (originally) intended for full-width Japanese chars</td></tr>
-<tr><td>%VAR</td><td>Variable that may store numeric values</td></tr>
-<tr><td>$VAR</td><td>Variable that may store character strings</td></tr>
-<tr><td>COLOR</td><td>RGB value: '#' followed by 6 hexadecimal chars</td></tr>
-<tr><td>EFFECT</td><td>Built-in effect number w/duration, or number defined by an earlier "effect" command</td></tr>
-<tr><td>ENUM</td><td>Argument must be one of the comma-separated values within the {}s</td></tr>
-<tr><td>CONDITION</td><td>Expression that returns a true/false value</td></tr>
-<tr><td>SENTENCE</td><td>A single command, or multiple commands separated by ':'</td></tr>
-<tr><td>''</td><td>Surrounds a string literal</td></tr>
-<tr><td>[]</td><td>Surrounds optional argument(s)</td></tr>
-<tr><td>...</td><td>Follows an argument pattern that may be repeated</td></tr>
-</tbody></table>
-
-<h5>Allowed Numeric Ranges</h5>
-<table id="NUMBER_RANGE_TABLE"><col class="grey" span="1" width="100"><col bgcolor="#E0E0E0" span="1" width="75"><col span="1"><tbody>
-<tr><td>Variable Number</td><td>0 - 4095</td><td>If 4096 is used, the initial value is undefined.</td></tr>
-<tr><td>Array Number</td><td>0 - </td><td>Unbounded?  This could cause memory issues.</td></tr>
-<tr><td>Sprite Number</td><td>0 - 999</td><td>Use of 1000 will cause an error.</td></tr>
-<tr><td>Enhanced Sprite Number</td><td>0 - 255</td><td>Use of 512 will cause an error.</td></tr>
-<tr><td>Effect Number</td><td>2 - 255</td><td>Use of 256 will cause an error.</td></tr>
-<tr><td>Button Number</td><td>1 - </td><td>Unbounded?  This could cause memory issues.</td></tr>
-<tr><td>Channel Number</td><td>0 - 49</td><td>NScr ver2.82+ allows (0-199)</td></tr></tbody></table>
- 
-<h5>Concerned Game Engines</h5>
-<table id="ENGINE_EXPLANATION_TABLE"><col class="grey" span="1" width="100"><col span="1"><tbody>
-<tr><td><a href="http://www.nscripter.com/" target="_blank">NScripter</a></td><td>A game scripting engine</td></tr>
-<tr><td><a href="https://onscripter.osdn.jp/onscripter.html" target="_blank">ONScripter</a></td><td>An open-source NScript interpreter</td></tr>
-<tr><td><a href="https://kaisernet.fka.cx/onscripter/#onscripter-en" target="_blank">ONScripter-EN</a></td><td>English branch of ONScripter</td></tr>
-<tr><td><a href="https://kaisernet.fka.cx/onscripter/#ponscripter" target="_blank">PONScripter</a></td><td>Proportional ONScripter: supports Unicode and proportional fonts</td></tr>
-<tr><td><a href="https://sourceforge.net/projects/onslaught-vn/" target="_blank">ONSlaught</a></td><td>Another proportional NScript interpreter with altered behavior</td></tr>
-</tbody></table>
-<br>
-</div>
-
-<h5>NScripter Version Information</h5>
-<table id="ENGINE_EXPLANATION_TABLE"><col class="grey" span="1" width="100"><col span="1"><tbody>
-<tr><td>2.82</td><td>Last version with no Lua implementation</td></tr>
-<tr><td>2.95</td><td>Last version to support Windows 98/ME/2000</td></tr>
-<tr><td>2.96</td><td>Requires Windows XP or better</td></tr>
-</tbody></table>
-<br>
-</div>
-
+    <div id="HEADER"><a id="top" name="top"></a>
+        <span class="EditDate">Last edited 05 / 17 / 2023</span>
+    
+        <h5>Background Color Explanations</h5>
+        <table id="BGCOLOR_EXPLANATION_TABLE"><col span="1" width="100"><col span="1"><tbody>
+            <tr><td class="S">Reserved Syntax</td><td>Keywords or labels with predefined functions</td></tr>
+            <tr><td class="F">F Commands</td><td>Commands that may be used only in the definition block</td></tr>
+            <tr><td class="E">E Commands</td><td>Commands that may be used only in the program block</td></tr>
+            <tr><td class="FE">F/E Commands</td><td>Commands that may be used in the program or the definition block</td></tr>
+            <tr><td class="T">Special Text Commands</td><td>Special characters that may be used as command substitutes within displayed text blocks</td></tr>
+        </tbody></table>
+        
+        <h5>Argument Type Explanations</h5>
+        <table id="VALUE_EXPLANATION_TABLE"><col class="grey" span="1" width="100"><col span="1"><tbody>
+            <tr><td>NAME</td><td>Case-insensitive string of alphanumerics and/or '_'; must begin with an alphabet letter or '_'</td></tr>
+            <tr><td>LABEL</td><td>Character string consisting of '*' followed by a NAME</td></tr>
+            <tr><td>NUM</td><td>Numeric expression: string(s) of numeric digits possibly connected by any of the operators '+', '-', '*', '/'</td></tr>
+            <tr><td>STR</td><td>Character string enclosed by '"'s; (originally) intended for full-width Japanese chars</td></tr>
+            <tr><td>%VAR</td><td>Variable that may store numeric values</td></tr>
+            <tr><td>$VAR</td><td>Variable that may store character strings</td></tr>
+            <tr><td>COLOR</td><td>RGB value: '#' followed by 6 hexadecimal chars</td></tr>
+            <tr><td>EFFECT</td><td>Built-in effect number w/duration, or number defined by an earlier "effect" command</td></tr>
+            <tr><td>ENUM</td><td>Argument must be one of the comma-separated values within the {}s</td></tr>
+            <tr><td>CONDITION</td><td>Expression that returns a true/false value</td></tr>
+            <tr><td>SENTENCE</td><td>A single command, or multiple commands separated by ':'</td></tr>
+            <tr><td>''</td><td>Surrounds a string literal</td></tr>
+            <tr><td>[]</td><td>Surrounds optional argument(s)</td></tr>
+            <tr><td>...</td><td>Follows an argument pattern that may be repeated</td></tr>
+        </tbody></table>
+        
+        <h5>Allowed Numeric Ranges</h5>
+        <table id="NUMBER_RANGE_TABLE"><col class="grey" span="1" width="100"><col bgcolor="#E0E0E0" span="1" width="75"><col span="1"><tbody>
+            <tr><td>Variable Number</td><td>0 - 4095</td><td>If 4096 is used, the initial value is undefined.</td></tr>
+            <tr><td>Array Number</td><td>0 - </td><td>Unbounded?  This could cause memory issues.</td></tr>
+            <tr><td>Sprite Number</td><td>0 - 999</td><td>Use of 1000 will cause an error.</td></tr>
+            <tr><td>Enhanced Sprite Number</td><td>0 - 255</td><td>Use of 512 will cause an error.</td></tr>
+            <tr><td>Effect Number</td><td>2 - 255</td><td>Use of 256 will cause an error.</td></tr>
+            <tr><td>Button Number</td><td>1 - </td><td>Unbounded?  This could cause memory issues.</td></tr>
+            <tr><td>Channel Number</td><td>0 - 49</td><td>NScr ver2.82+ allows (0-199)</td></tr>
+        </tbody></table>
+         
+        <h5>Concerned Game Engines</h5>
+        <table id="ENGINE_EXPLANATION_TABLE"><col class="grey" span="1" width="100"><col span="1"><tbody>
+            <tr><td><a href="http://www.nscripter.com/" target="_blank">NScripter</a></td><td>A game scripting engine</td></tr>
+            <tr><td><a href="https://onscripter.osdn.jp/onscripter.html" target="_blank">ONScripter</a></td><td>An open-source NScript interpreter</td></tr>
+            <tr><td><a href="https://kaisernet.fka.cx/onscripter/#onscripter-en" target="_blank">ONScripter-EN</a></td><td>English branch of ONScripter</td></tr>
+            <tr><td><a href="https://kaisernet.fka.cx/onscripter/#ponscripter" target="_blank">PONScripter</a></td><td>Proportional ONScripter: supports Unicode and proportional fonts</td></tr>
+            <tr><td><a href="https://sourceforge.net/projects/onslaught-vn/" target="_blank">ONSlaught</a></td><td>Another proportional NScript interpreter with altered behavior</td></tr>
+        </tbody></table>
+        <br>
+        
+        <h5>NScripter Version Information</h5>
+        <table id="ENGINE_EXPLANATION_TABLE"><col class="grey" span="1" width="100"><col span="1"><tbody>
+        <tr><td>2.82</td><td>Last version with no Lua implementation</td></tr>
+        <tr><td>2.95</td><td>Last version to support Windows 98/ME/2000</td></tr>
+        <tr><td>2.96</td><td>Requires Windows XP or better</td></tr>
+        </tbody></table>
+        <br>
+    </div>
+    
 <div id="QUICKTABLE"><div class="HasSidebar" id="LIST">
 
 <a id="category_startend"></a><h5>Game Start/End/Quit</h5>
@@ -8693,4 +8694,6 @@ return</pre></div>
 <hr><a href="#gettag">gettag</a> / <a href="#pretextgosub">pretextgosub</a> / <a href="#_squarebrackets">[]</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div></div>
 <div id="FOOTER"></div>
-</body></html>
+
+</body>
+</html>
