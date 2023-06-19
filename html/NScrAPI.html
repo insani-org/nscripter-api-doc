@@ -1424,6 +1424,9 @@ Even when this command is used, the text window still is sized as for 640x480. (
 <b>*</b></div><div class="NoticeBody">In ONScripter-EN, V is useless, as local variables are not limited.<br>
 Like <b>;value</b>, setting G above 4095 triggers a bug which causes global variables to be disabled.<br>
 The L option is unimplemented as there is no known label limit in ONScripter-EN. (by Galladite)</div></div>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">In ONScripter-EN, the method of reading directives is thus: any number of instances of ;mode, ;value, and ;$ may be given, followed by an optional single ;gameid. There may be no line breaks up to this point.<br>
+However, for backwards-compatibility it is better to follow the more rigid syntax of one of either ;mode, ;value, or ;$, followed by an optional ;gameid. (By Galladite)</div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Specifies the total number of variables as 2000, global variables to begin at 1000, the screen size to be 800x600, and the maximum number of tags to be the default 10000.</div>
 <pre class="ExSource">;$V2000G1000S800,600L10000</pre></div>
