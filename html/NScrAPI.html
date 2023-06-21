@@ -2772,10 +2772,14 @@ This function forces a click wait state when the interpreter encounters one of t
 However, if there happens to be a click wait command directly after that character, or if that character is prefaced by a 1-byte underscore (_), then this forced click wait state will not occur.<br>
 The second parameter decides whether this will be a simple click-wait or a new-page wait. If the clickstr char occurs on a line past (max textwindow lines - number), then it will use a new-page wait.<br>
 This function is convenient, but be careful -- exceptionally long lines may still overflow the textarea. In such situations, you may want to use a standard new-page wait or some other manual adjustment.<br>
-Please note that the character string should only contain double-byte chars.</p>
+Please note that the character string should only contain double-byte chars.<br><br>
+In ONScripter-EN, you can define single-byte as well as multi-byte chars by putting multi-byte chars, followed by a backtick (`), followed by single-byte chars. This may also be possible in ONScripter. Note that the backtick does not function as a toggle like in normal text; once it has been used, you <b>must</b> only give single-byte chars!</p>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Cause a clickwait at characters '」', '。', '！', '？'</div>
 <pre class="ExSource">clickstr "」。！？",2</pre></div>
+<div class="Example"><span class="ExHeading">ONScripter-EN Example:</span><br>
+    <div class="ExComment">Cause a clickwait at characters '。', '！', '？', '.', '!', '?'</div>
+<pre class="ExSource">clickstr "。！？`.!?",2</pre></div>
 <hr><a href="#_atsign">@</a> / <a href="#_backslash">\</a> / <a href="#_underscore">_</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
