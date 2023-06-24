@@ -7676,11 +7676,13 @@ The third and fifth arguments tie in with each other. The third argument sets a 
 If you're using UTF-8 mode in ONScripter-EN, see the command <b>setwindow4</b> for a better method than this.<br>
 The fourth and sixth arguments are the same; they specify the number of lines of text allowed on a page (including wrapped and empty lines) and the height of each character. You should also ensure that this does not overflow the bottom of the text window.<br>
 The text spacing X and Y arguments (7 and 8) cause additional spacing between characters and rows. The rest of the arguments should speak for themselves.</p>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">(Explaination by Galladite)</div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Text window with default settings</div>
 <pre class="ExSource">setwindow 8,16,20,23,26,26,0,2,20,1,1,#999999,0,0,639,479</pre></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
-<div class="ExComment">Text window with default settings, but using image file "bgi.bmp" as backdrop</div>
+<div class="ExComment">Text window with default settings, but using image file "bg1.bmp" as backdrop</div>
 <pre class="ExSource">setwindow 8,16,20,23,26,26,0,2,20,1,1,"bg1.bmp",0,0</pre></div>
 <hr><a href="#setwindow2">setwindow2</a> / <a href="#setwindow3">setwindow3</a> / <a href="#setwindow4">setwindow4</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
@@ -7748,7 +7750,7 @@ This behaves the same as <b>setwindow</b> but without clearing the Log mode buff
 <div class="ExComment">Sets text window with default settings without clearing log</div>
 <pre class="ExSource">setwindow3 8,16,20,23,26,26,0,2,20,1,1,#999999,0,0,639,479</pre></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
-<div class="ExComment">Sets text window with default settings, but using image file "bgi.bmp" as backdrop, without clearing log</div>
+<div class="ExComment">Sets text window with default settings, but using image file "bg1.bmp" as backdrop, without clearing log</div>
 <pre class="ExSource">setwindow3 8,16,20,23,26,26,0,2,20,1,1,"bg1.bmp",0,0</pre></div>
 <hr><a href="#setwindow">setwindow</a> / <a href="#setwindow2">setwindow2</a> / <a href="#setwindow4">setwindow4</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
@@ -7801,7 +7803,7 @@ This command is designed to be better for working in UTF-8 mode, however the oth
 <div class="ExComment">Sets text window with default settings without clearing log</div>
 <pre class="ExSource">setwindow4 8,16,639,23,26,26,0,2,20,1,1,#999999,0,0,639,479,0</pre></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
-<div class="ExComment">Sets text window with default settings, but using image file "bgi.bmp" as backdrop, with clearing log</div>
+<div class="ExComment">Sets text window with default settings, but using image file "bg1.bmp" as backdrop, with clearing log</div>
 <pre class="ExSource">setwindow4 8,16,639,23,26,26,0,2,20,1,1,"bg1.bmp",0,0,1</pre></div>
 <hr><a href="#setwindow">setwindow</a> / <a href="#setwindow2">setwindow2</a> / <a href="#setwindow4">setwindow4</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
