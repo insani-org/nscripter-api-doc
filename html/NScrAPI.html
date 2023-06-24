@@ -134,6 +134,8 @@
 <div class="Word E"><span class="WordLiteral">
 <a href="#setwindow3" title="Ver.2.30 Program Block Only: setwindow3 (text top-left X), (text top-left Y), (num text columns), (num text lines), (text font-size X), (text font-size Y), (spacing X), (spacing Y), (default text speed), (boldface:0=off/1=on), (drop-shadow:0=off/1=on), (window-color), (window top-left X), (window top-left Y), (window bottom-right X), (window bottom-right Y)">setwindow3</a></span><span class="Function">same as <b>setwindow</b>, but doesn't clear Log buffer</span><div class="Space"></div></div>
 <div class="Word E"><span class="WordLiteral">
+<a href="#setwindow4" title="ONScripter-EN Program Block Only: setwindow4 (text top-left X), (text top-left Y), (text width px), (num text lines), (text font-size X), (text font-size Y), (spacing X), (spacing Y), (default text speed), (boldface:0=off/1=on), (drop-shadow:0=off/1=on), (window-color), (window top-left X), (window top-left Y), (window bottom-right X), (window bottom-right Y), (clear-log:0=off/1=on)">setwindow4</a></span><span class="Function">A modified version of <b>setwindow</b> which better-supports UTF-8</span><div class="Space"></div></div>
+<div class="Word E"><span class="WordLiteral">
 <a href="#textspeeddefault" title="Ver.2.47 Program Block Only: textspeeddefault">textspeeddefault</a></span><span class="Function">change to default text display speed</span><div class="Space"></div></div>
 <div class="Word E"><span class="WordLiteral">
 <a href="#font" title="Ver.2.67 Program Block Only: font (font-name)">font</a></span><span class="Function">change the text display font</span><div class="Space"></div></div>
@@ -7670,7 +7672,7 @@ By default, the text window takes up the full screen and is somewhat translucent
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Text window with default settings, but using image file "bgi.bmp" as backdrop</div>
 <pre class="ExSource">setwindow 8,16,20,23,26,26,0,2,20,1,1,"bg1.bmp",0,0</pre></div>
-<hr><a href="#setwindow2">setwindow2</a> / <a href="#setwindow3">setwindow3</a> / 
+<hr><a href="#setwindow2">setwindow2</a> / <a href="#setwindow3">setwindow3</a> / <a href="#setwindow4">setwindow4</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="setwindow2"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
@@ -7688,7 +7690,7 @@ This command can only modify the color or image file that was first specified in
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">This modifies the text window to use image file "twindow2.bmp" as backdrop.</div>
 <pre class="ExSource">setwindow2 ":c;twindow2.bmp"</pre></div>
-<hr><a href="#setwindow">setwindow</a> / <a href="#setwindow3">setwindow3</a> / 
+<hr><a href="#setwindow">setwindow</a> / <a href="#setwindow3">setwindow3</a> / <a href="#setwindow4">setwindow4</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="setwindow3"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
@@ -7738,7 +7740,60 @@ This behaves the same as <b>setwindow</b> but without clearing the Log mode buff
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Sets text window with default settings, but using image file "bgi.bmp" as backdrop, without clearing log</div>
 <pre class="ExSource">setwindow3 8,16,20,23,26,26,0,2,20,1,1,"bg1.bmp",0,0</pre></div>
-<hr><a href="#setwindow">setwindow</a> / <a href="#setwindow2">setwindow2</a> / 
+<hr><a href="#setwindow">setwindow</a> / <a href="#setwindow2">setwindow2</a> / <a href="#setwindow4">setwindow4</a> / 
+<hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
+
+<a id="setwindow4"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
+<span class="EngineField"><span class="NoBr">( <span class="NoBr">ONScr-EN</span> <span class="EngineVersion">2023-06-24</span> )</span></span></div>
+<div class="WordName">setwindow4</div></h2><h4><a href="#category_textwindow" class="WordCategory">Text Window</a></h4>
+<h3>setwindow4 NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,COLOR,NUM,NUM,NUM,NUM,NUM</h3>
+<div class="Arguments">
+<span class="ArgType">NUM</span><span class="ArgMeaning">X-coordinate of top left for text</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Y-coordinate of top left for text</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Number of (full-width) text columns</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Number of text lines</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">(Full-width) text font size X</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Text font size Y</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Text spacing X</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Text spacing Y</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Default text speed</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Boldface toggle (0=off/1=on)</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Drop shadow toggle (0=off/1=on)</span><div class="Space"></div>
+<span class="ArgType">COLOR</span><span class="ArgMeaning">Window color</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Window top left X-coordinate</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Window top left Y-coordinate</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Window bottom right X-coordinate</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Window bottom right Y-coordinate</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Clear log (0=off/1=on)</span><div class="Space"></div></div>
+<h3>setwindow4 NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,STR,NUM,NUM,NUM</h3>
+<div class="Arguments">
+<span class="ArgType">NUM</span><span class="ArgMeaning">X-coordinate of top left for text</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Y-coordinate of top left for text</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Number of (full-width) text columns</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Number of text lines</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">(Full-width) text font size X</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Text font size Y</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Text spacing X</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Text spacing Y</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Default text speed</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Boldface toggle (0=off/1=on)</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Drop shadow toggle (0=off/1=on)</span><div class="Space"></div>
+<span class="ArgType">STR</span><span class="ArgMeaning">Image file name</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Window top left X-coordinate</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Window top left Y-coordinate</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Clear log (0=off/1=on)</span><div class="Space"></div></div>
+<div class="ContentBody"><p class="Description">
+This behaves the same as <b>setwindow</b> but with two main changes. Firstly, there is a new argument which spcifies if the lookback mode log should be cleared or not (similarly to setwindow3). Secondly, instead of calculating the width of the area in which text can be drawn, the third option specifies an extact width for this in pixels. This means that you can always set the text display area width to an exact pixel value (which is sometimes impossible with setwindow in UTF-8 mode), and it also means that the fifth argument can be changed to control the indent size, since its value is no longer relevant.<br />
+This command is designed to be better for working in UTF-8 mode, however the other setwindow commands haven't been changed so that SJIS script shouldn't break when converted to UTF-8.</p>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">Entering Log Mode may be buggy if the text window isn't set to the same width and height.</div></div>
+<div class="Example"><span class="ExHeading">Example:</span><br>
+<div class="ExComment">Sets text window with default settings without clearing log</div>
+<pre class="ExSource">setwindow4 8,16,639,23,26,26,0,2,20,1,1,#999999,0,0,639,479,0</pre></div>
+<div class="Example"><span class="ExHeading">Example:</span><br>
+<div class="ExComment">Sets text window with default settings, but using image file "bgi.bmp" as backdrop, with clearing log</div>
+<pre class="ExSource">setwindow4 8,16,639,23,26,26,0,2,20,1,1,"bg1.bmp",0,0,1</pre></div>
+<hr><a href="#setwindow">setwindow</a> / <a href="#setwindow2">setwindow2</a> / <a href="#setwindow4">setwindow4</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="sevol"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
