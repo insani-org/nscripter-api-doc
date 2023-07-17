@@ -1430,7 +1430,7 @@ Like <b>;value</b>, setting G above 4095 triggers a bug which causes global vari
 The L option is unimplemented as there is no known label limit in ONScripter-EN. (by Galladite)</div></div>
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">In ONScripter-EN, the method of reading directives is thus: any number of instances of ;mode, ;value, and ;$ may be given, followed by an optional single ;gameid. There may be no line breaks up to this point.<br>
-However, for backwards-compatibility it is better to follow the more rigid syntax of one of either ;mode, ;value, or ;$, followed by an optional ;gameid. (By Galladite)</div></div>
+However, for backwards-compatibility it is better to follow the more rigid syntax of one of either ;mode, ;value, or ;$, followed by an optional ;gameid. (by Galladite)</div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Specifies the total number of variables as 2000, global variables to begin at 1000, the screen size to be 800x600, and the maximum number of tags to be the default 10000.</div>
 <pre class="ExSource">;$V2000G1000S800,600L10000</pre></div>
@@ -3848,7 +3848,7 @@ If a <b>gameid</b> is not specified, (P)Onscripter creates a savedata folder nam
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">Well, <i>some</i> exceptions in ONScripter-EN - see my comments under <b>;$</b> (by Galladite)</div></div>
 <div class="Notice"><div class="NoticeHead">
-<b>*</b></div><div class="NoticeBody">In ONScripter-EN, there can be any amount of spaces or tabs between the semicolon and the "gameid", but any after that will be interpreted as part of the gameid string. (By Galladite)</div></div>
+<b>*</b></div><div class="NoticeBody">In ONScripter-EN, there can be any amount of spaces or tabs between the semicolon and the "gameid", but any after that will be interpreted as part of the gameid string. (by Galladite)</div></div>
 <div class="Example"><span class="ExHeading">ONScripter Example:</span><br>
 <div class="ExComment">Sets the game folder name to "ToHeart-Extra".</div>
 <pre class="ExSource">
@@ -6306,9 +6306,12 @@ The following options may be combined:<br>
 <span class="Indent"></span><b>movie "filename",click</b> ;Movie playback is click-interruptible (not valid in <b>async</b> mode)<br>
 <span class="Indent"></span><b>movie "filename",loop</b> ;Plays the movie repeatedly (must be combined with either <b>click</b> or <b>async</b>, otherwise it can't be stopped!)<br>
 <span class="Indent"></span><b>movie "filename",async</b> ;Asynchronous playback. The script returns to command interpretation while playback continues. The movie will always be the top layer on-screen, even atop text.<br>
-<span class="Indent"></span><b>movie stop</b> ;Use this to stop <b>async</b> movie playback</p><div class="Notice"><div class="NoticeHead">
+<span class="Indent"></span><b>movie stop</b> ;Use this to stop <b>async</b> movie playback</p>
+<div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">The movie image remains on-screen after playback finishes.<br>
-Since the movie is considered invalid data, it's possible to revert to the screen as it was beforehand by using <b>print</b>.</div></div>
+Since the movie is considered invalid data, it's possible to revert to the screen as it was beforehand by using <b>print</b>.<br></div></div>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">Using the click, loop, and async options all at once causes ONScripter-EN to hang. (by Galladite)<br></div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">This plays "test.mpg" looped, within a 320x240 window at coordinate (10,20), and asynchronously; it then stops playback after a 30 second wait.</div>
 <pre class="ExSource">movie "test.mpg",pos,10,20,320,240,async,loop
