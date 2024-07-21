@@ -9,7 +9,7 @@
 <body>
 
     <div id="HEADER"><a id="top" name="top"></a>
-        <span class="EditDate">Last edited 2023-06-24</span>
+        <span class="EditDate">Last edited 2023-07-17</span>
     
         <h5>Background Color Explanations</h5>
         <table id="BGCOLOR_EXPLANATION_TABLE"><col span="1" width="100"><col span="1"><tbody>
@@ -6334,9 +6334,12 @@ The following options may be combined:<br>
 <span class="Indent"></span><b>movie "filename",click</b> ;Movie playback is click-interruptible (not valid in <b>async</b> mode)<br>
 <span class="Indent"></span><b>movie "filename",loop</b> ;Plays the movie repeatedly (must be combined with either <b>click</b> or <b>async</b>, otherwise it can't be stopped!)<br>
 <span class="Indent"></span><b>movie "filename",async</b> ;Asynchronous playback. The script returns to command interpretation while playback continues. The movie will always be the top layer on-screen, even atop text.<br>
-<span class="Indent"></span><b>movie stop</b> ;Use this to stop <b>async</b> movie playback</p><div class="Notice"><div class="NoticeHead">
+<span class="Indent"></span><b>movie stop</b> ;Use this to stop <b>async</b> movie playback</p>
+<div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">The movie image remains on-screen after playback finishes.<br>
-Since the movie is considered invalid data, it's possible to revert to the screen as it was beforehand by using <b>print</b>.</div></div>
+Since the movie is considered invalid data, it's possible to revert to the screen as it was beforehand by using <b>print</b>.<br></div></div>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">Using the click, loop, and async options all at once causes ONScripter-EN to hang. (by Galladite)<br></div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">This plays "test.mpg" looped, within a 320x240 window at coordinate (10,20), and asynchronously; it then stops playback after a 30 second wait.</div>
 <pre class="ExSource">movie "test.mpg",pos,10,20,320,240,async,loop
@@ -7839,9 +7842,11 @@ This behaves the same as <b>setwindow</b> but without clearing the Log mode buff
 <span class="ArgType">NUM</span><span class="ArgMeaning">Clear log (0=off/1=on)</span><div class="Space"></div></div>
 <div class="ContentBody"><p class="Description">
 This behaves the same as <b>setwindow</b> but with two main changes. Firstly, there is a new argument which spcifies if the lookback mode log should be cleared or not (similarly to setwindow3). Secondly, instead of calculating the width of the area in which text can be drawn, the third option specifies an extact width for this in pixels. This means that you can always set the text display area width to an exact pixel value (which is sometimes impossible with setwindow in UTF-8 mode), and it also means that the fifth argument can be changed to control the indent size, since its value is no longer relevant.<br />
-This command is designed to be better for working in UTF-8 mode, however the other setwindow commands haven't been changed so that SJIS script shouldn't break when converted to UTF-8.</p>
+This command is designed to be better for working in UTF-8 mode, however the other setwindow commands haven't been changed so that SJIS scripts shouldn't break when converted to UTF-8.</p>
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">Entering Log Mode may be buggy if the text window isn't set to the same width and height.</div></div>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">Remember to ensure that the text display area width takes into account the number of pixels of indentation, so that text doesn't overflow! (by Galladite)</div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Sets text window with default settings without clearing log</div>
 <pre class="ExSource">setwindow4 8,16,639,23,26,26,0,2,20,1,1,#999999,0,0,639,479,0</pre></div>
@@ -7861,6 +7866,8 @@ This command is designed to be better for working in UTF-8 mode, however the oth
 Changes the sound volume.</p>
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">Volume changes are not saved, so manage them manually or with variables.</div></div>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">This sets the volume of all dwave channels besides channel 0.</div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Sets sound effect volume to maximum (100)</div>
 <pre class="ExSource">sevol 100</pre></div>
@@ -8118,7 +8125,7 @@ ld c,":a/10,20,2;man_alpha.bmp",1</pre></div>
 <h3>strsp NUM,STR,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM[,COLOR[,...]]</h3>
 <div class="Arguments">
 <span class="ArgType">NUM</span><span class="ArgMeaning">Sprite number</span><div class="Space"></div>
-<span class="ArgType">NUM</span><span class="ArgMeaning">String of text to render as a sprite</span><div class="Space"></div>
+<span class="ArgType">STR</span><span class="ArgMeaning">String of text to render as a sprite</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">X-coordinate of top left</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Y-coordinate of top left</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Number of (full-width) text columns</span><div class="Space"></div>
@@ -8144,7 +8151,7 @@ If optional colors are provided, then the sprite will have a cell for each given
 <h3>strsph NUM,STR,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM,NUM[,COLOR[,...]]</h3>
 <div class="Arguments">
 <span class="ArgType">NUM</span><span class="ArgMeaning">Sprite number</span><div class="Space"></div>
-<span class="ArgType">NUM</span><span class="ArgMeaning">String of text to render as a sprite</span><div class="Space"></div>
+<span class="ArgType">STR</span><span class="ArgMeaning">String of text to render as a sprite</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">X-coordinate of top left</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Y-coordinate of top left</span><div class="Space"></div>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Number of (full-width) text columns</span><div class="Space"></div>
