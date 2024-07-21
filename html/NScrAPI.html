@@ -81,6 +81,8 @@
 <a href="#reset" title="Program Block Only: reset">reset</a></span><span class="Function">reset game</span><div class="Space"></div></div>
 <div class="Word E"><span class="WordLiteral">
 <a href="#definereset" title="Program Block Only: definereset">definereset</a></span><span class="Function">force total script reset</span><div class="Space"></div></div>
+<div class="Word E"><span class="WordLiteral">
+<a href="#definereset" title="enginereset">enginereset</a></span><span class="Function">force total engine reset</span><div class="Space"></div></div>
 <div class="Word FE"><span class="WordLiteral">
 <a href="#end" title="Definition/Program Block: end">end</a></span><span class="Function">end game and close window</span><div class="Space"></div></div>
 
@@ -701,6 +703,10 @@ kidokumode (stop-at-unread:0=no/1=yes)">kidokumode</a></span><span class="Functi
 <a href="#noloaderror" title="Ver.(undoc) Definition Block Only: noloaderror">noloaderror</a></span><span class="Function">don't generate an error when an image or sound can't be loaded</span><div class="Space"></div></div>
 <div class="Word E"><span class="WordLiteral">
 <a href="#minimizewindow" title="Ver.2.00 Program Block Only: minimizewindow">minimizewindow</a></span><span class="Function">minimize the game window</span><div class="Space"></div></div>
+<div class="Word E"><span class="WordLiteral">
+<a href="#getres" title="Ver.20240721 Definition/Program Block: getres">getres</a></span><span class="Function">get the current resolution</span><div class="Space"></div></div>
+<div class="Word E"><span class="WordLiteral">
+<a href="#setres" title="Ver.20240721 Definition/Program Block: setres">setres</a></span><span class="Function">set a new resolution and restart the engine</span><div class="Space"></div></div>
  
 <a id="category_specialmode"></a><h5>Special Mode Settings</h5>
 <div class="Word S"><span class="WordLiteral">
@@ -1430,7 +1436,7 @@ Like <b>;value</b>, setting G above 4095 triggers a bug which causes global vari
 The L option is unimplemented as there is no known label limit in ONScripter-EN. (by Galladite)</div></div>
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">In ONScripter-EN, the method of reading directives is thus: any number of instances of ;mode, ;value, and ;$ may be given, followed by an optional single ;gameid. There may be no line breaks up to this point.<br>
-However, for backwards-compatibility it is better to follow the more rigid syntax of one of either ;mode, ;value, or ;$, followed by an optional ;gameid. (By Galladite)</div></div>
+However, for backwards-compatibility it is better to follow the more rigid syntax of one of either ;mode, ;value, or ;$, followed by an optional ;gameid. (by Galladite)</div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Specifies the total number of variables as 2000, global variables to begin at 1000, the screen size to be 800x600, and the maximum number of tags to be the default 10000.</div>
 <pre class="ExSource">;$V2000G1000S800,600L10000</pre></div>
@@ -3598,6 +3604,16 @@ The default value is 1 (skip allowed); setting this to 0 means effects cannot be
 <hr><a href="#game">game</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
+<a id="enginereset"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
+<span class="EngineField"><span class="NoBr">( ONScr-EN<span class="EngineVersion">20240721</span> )</span></span></div>
+<div class="WordName">enginereset</div></h2><h4><a href="#category_startend" class="WordCategory">Game Start/End/Quit</a></h4>
+<h3>enginereset</h3>
+<div class="Arguments"></div>
+<div class="ContentBody"><p class="Description">
+    Entirely resets the game engine, including re-drawing the game's window, allowing for changing resolutions, among other uses.</p>
+<hr><a href="#getres">getres</a> / <a href="#setres">setres</a> /
+<hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
+
 <a id="english"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition Block Only]</span></span>
 <span class="EngineField"><span class="NoBr">( NScr<span class="EngineVersion">2.82</span> )</span></span></div>
 <div class="WordName">english</div></h2><h4><a href="#category_drawtext" class="WordCategory">Text Display</a></h4>
@@ -3848,7 +3864,7 @@ If a <b>gameid</b> is not specified, (P)Onscripter creates a savedata folder nam
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">Well, <i>some</i> exceptions in ONScripter-EN - see my comments under <b>;$</b> (by Galladite)</div></div>
 <div class="Notice"><div class="NoticeHead">
-<b>*</b></div><div class="NoticeBody">In ONScripter-EN, there can be any amount of spaces or tabs between the semicolon and the "gameid", but any after that will be interpreted as part of the gameid string. (By Galladite)</div></div>
+<b>*</b></div><div class="NoticeBody">In ONScripter-EN, there can be any amount of spaces or tabs between the semicolon and the "gameid", but any after that will be interpreted as part of the gameid string. (by Galladite)</div></div>
 <div class="Example"><span class="ExHeading">ONScripter Example:</span><br>
 <div class="ExComment">Sets the game folder name to "ToHeart-Extra".</div>
 <pre class="ExSource">
@@ -4162,6 +4178,18 @@ Opens the Windows registry and queries for a variable.<br>
 Will search only in HKEY_CURRENT_USER.</p>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment"></div><pre class="ExSource">getreg $0,"software\leaf\toheart","datadir"</pre></div>
+<hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
+
+<a id="getres"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
+<span class="EngineField"><span class="NoBr">( ONScr-EN<span class="EngineVersion">20240721</span> )</span></span></div>
+<div class="WordName">getres</div></h2><h4><a href="#category_additional" class="WordCategory">Miscellaneous</a></h4>
+<h3>getres %VAR,%VAR</h3>
+<div class="Arguments">
+<span class="ArgType">VAR</span><span class="ArgMeaning">Number variable to hold the screen's width</span><div class="Space"></div>
+<span class="ArgType">VAR</span><span class="ArgMeaning">Number variable to hold the screen's height</span><div class="Space"></div></div>
+<div class="ContentBody"><p class="Description">
+Retrieves the current screen resolution, with both width and height being found individually.</p>
+<hr><a href="#setres">setres</a> /
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="getret"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
@@ -7623,6 +7651,21 @@ Messages may be sent to the plugin via <b>layermessage</b>.</p>
 <div class="Notice"><div class="NoticeHead">
 <b>*</b></div><div class="NoticeBody">At present, ONScripter-EN supports the following "plugin-based" layer effects (originally created by Takashi Toyama), via emulation: "hana.dll", "oldmovie.dll", and "snow.dll". (by Mion)</div></div>
 <hr><a href="#layermessage">layermessage</a> / 
+<hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
+
+<a id="setres"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
+<span class="EngineField"><span class="NoBr">( ONScr-EN<span class="EngineVersion">20240721</span> )</span></span></div>
+<div class="WordName">setres</div></h2><h4><a href="#category_additional" class="WordCategory">Miscellaneous</a></h4>
+<h3>setres NUM,NUM</h3>
+<div class="Arguments">
+<span class="ArgType">NUM</span><span class="ArgMeaning">Target screen width</span><div class="Space"></div>
+<span class="ArgType">NUM</span><span class="ArgMeaning">Target screen height</span><div class="Space"></div></div>
+<div class="ContentBody"><p class="Description">
+Sets the screen resolution and resets the engine using the same method as enginereset.<br />
+Ensuring this happens gracefully is the responsibility of the user.</p>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">Nota bene, creatores ludorum! Remember to enable the use of variable screen resolutions using ";$S?" (by Galladite)</div></div>
+<hr><a href="#_semicoldollar">;$</a> / <a href="#enginereset">enginereset</a> / <a href="#setres">setres</a> /
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="setwindow"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
