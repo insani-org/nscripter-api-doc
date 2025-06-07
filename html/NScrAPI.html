@@ -7378,6 +7378,8 @@ Returns 1 if the savefile exists, 0 if it does not.</p>
 <span class="ArgType">NUM</span><span class="ArgMeaning">Savefile number</span><div class="Space"></div></div>
 <div class="ContentBody"><p class="Description">
 Saves the game under the given save number. This does not ask for confirmation, so be careful.</p>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">This command will create a save slot that loads to <i>exactly</i> where it was called from. If this is called from within a menu loop of a custom save menu, it will load back to the save menu! Get around this by having the script immediately exit out the menu after saving. (by Galladite)</div></div>
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="savegame2"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
