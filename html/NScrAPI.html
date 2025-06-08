@@ -998,8 +998,9 @@ kidokumode (stop-at-unread:0=no/1=yes)">kidokumode</a></span><span class="Functi
 <div class="Word FE"><span class="WordLiteral">
 <a href="#csveof" title="Ver.2.63 Definition/Program Block: csveof %(result-var)">csveof</a></span><span class="Function">detect whether or not at the end of an open CSV file</span><div class="Space"></div></div>
 <div class="Word FE"><span class="WordLiteral">
-<a href="#csvclose" title="Ver.2.63 Definition/Program Block: csvclose">csvclose</a></span><span class="Function">close an open CSV 
-file</span><div class="Space"></div></div>
+<a href="#csvclose" title="Ver.2.63 Definition/Program Block: csvclose">csvclose</a></span><span class="Function">close an open CSV file</span><div class="Space"></div></div>
+<div class="Word FE"><span class="WordLiteral">
+<a href="#csvdelete" title="Ver.2.63 Definition/Program Block: csvdelete">csvdelete</a></span><span class="Function">delete a CSV file</span><div class="Space"></div></div>
 
 <a id="category_textbutton"></a><h5>Text Buttons</h5>
 <div class="Word T"><span class="WordLiteral">
@@ -2923,7 +2924,7 @@ If the given value is -1, it erases all extended sprites.</p>
 
 <a id="csvclose"></a><h2><div class="Support"><span class="WordVersion">Ver.2.63</span>
 <span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
-<span class="EngineField"><span class="NoBr">( NScr )</span></span></div><div class="WordName">csvclose</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
+<span class="EngineField"><span class="NoBr">( NScr</span>, <span class="NoBr">ONScr-EN<span class="EngineVersion">20250608</span> )</span></span></div><div class="WordName">csvclose</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
 <h3>csvclose</h3>
 <div class="Arguments"></div>
 <div class="ContentBody"><p class="Description">
@@ -2931,8 +2932,17 @@ Closes an open CSV file.  Please use this command when finished with the file; o
 <hr><a href="#csvopen">csvopen</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
+<a id="csvdelete"></a><h2><div class="Support">
+<span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
+<span class="EngineField"><span class="NoBr">( ONScr-EN<span class="EngineVersion">20250608</span> )</span></span></div><div class="WordName">csvdelete</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
+<h3>csvdelete</h3>
+<div class="Arguments"></div>
+<div class="ContentBody"><p class="Description">
+Deletes a CSV file if it exists. Like when writing a CSV file, this cannot affect files inside archives - it tries to delete from the save directory, where CSV files are written to.</p>
+<hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
+
 <a id="csveof"></a><h2><div class="Support"><span class="WordVersion">Ver.2.63</span><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
-<span class="EngineField"><span class="NoBr">( NScr )</span></span></div><div class="WordName">csveof</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
+<span class="EngineField"><span class="NoBr">( NScr</span>, <span class="NoBr">ONScr-EN<span class="EngineVersion">20250608</span> )</span></span></div><div class="WordName">csveof</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
 <h3>csveof %VAR</h3>
 <div class="Arguments">
 <span class="ArgType">VAR</span><span class="ArgMeaning">numeric result variable (0: not at end of file, 1: at end of file)</span><div class="Space"></div></div>
@@ -2946,7 +2956,7 @@ Returns 1 if so, 0 if not.</p>
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="csvopen"></a><h2><div class="Support"><span class="WordVersion">Ver.2.63</span><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
-<span class="EngineField"><span class="NoBr">( NScr )</span></span></div>
+<span class="EngineField"><span class="NoBr">( NScr</span>, <span class="NoBr">ONScr-EN<span class="EngineVersion">20250608</span> )</span></span></div>
 <div class="WordName">csvopen</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
 <h3>csvopen STR,STR</h3>
 <div class="Arguments">
@@ -2969,11 +2979,11 @@ Note that it's possible to open a CSV file inside an NSA archive, but only for r
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Opens "angou.csv" for encrypted writing.</div>
 <pre class="ExSource">csvopen "angou.csv","wc"</pre></div>
-<hr><a href="#csvread">csvread</a> / <a href="#csvwrite">csvwrite</a> / <a href="#csveof">csveof</a> / <a href="#csvclose">csvclose</a> / 
+<hr><a href="#csvread">csvread</a> / <a href="#csvwrite">csvwrite</a> / <a href="#csveof">csveof</a> / <a href="#csvclose">csvclose</a> / <a href="#csvdelete">csvdelete</a> / 
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="csvread"></a><h2><div class="Support"><span class="WordVersion">Ver.2.63</span><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
-<span class="EngineField"><span class="NoBr">( NScr )</span></span></div>
+<span class="EngineField"><span class="NoBr">( NScr</span>, <span class="NoBr">ONScr-EN<span class="EngineVersion">20250608</span> )</span></span></div>
 <div class="WordName">csvread</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
 <h3>csvread %VAR|$VAR[,...]</h3>
 <div class="Arguments">
@@ -2988,7 +2998,7 @@ Reads data items from a CSV file, in the specified order.</p>
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="csvwrite"></a><h2><div class="Support"><span class="WordVersion">Ver.2.63</span><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
-<span class="EngineField"><span class="NoBr">( NScr )</span></span></div>
+<span class="EngineField"><span class="NoBr">( NScr</span>, <span class="NoBr">ONScr-EN<span class="EngineVersion">20250608</span> )</span></span></div>
 <div class="WordName">csvwrite</div></h2><h4><a href="#category_csvfile" class="WordCategory">CSV File Manipulation</a></h4>
 <h3>csvwrite STR|NUM[,...]</h3>
 <div class="Arguments">
