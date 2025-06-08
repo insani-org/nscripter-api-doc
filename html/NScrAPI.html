@@ -663,6 +663,8 @@ kidokumode (stop-at-unread:0=no/1=yes)">kidokumode</a></span><span class="Functi
 <div class="Word E"><span class="WordLiteral">
 <a href="#savefileexist" title="Program Block Only: savefileexist (result-var), (save-num)">savefileexist</a></span><span class="Function">check whether or not a savefile exists</span><div class="Space"></div></div>
 <div class="Word E"><span class="WordLiteral">
+<a href="#savefileremove" title="Program Block Only: savefileremove (save-num)">savefileremove</a></span><span class="Function">remove a particular savefile</span><div class="Space"></div></div>
+<div class="Word E"><span class="WordLiteral">
 <a href="#saveon" title="Program Block Only: saveon">saveon</a></span><span class="Function">turn on Save Mode</span><div class="Space"></div></div>
 <div class="Word E"><span class="WordLiteral">
 <a href="#saveoff" title="Program Block Only: saveoff">saveoff</a></span><span class="Function">turn off Save Mode</span><div class="Space"></div></div>
@@ -7368,6 +7370,18 @@ This behavior is separate from the <b>savedir</b> command, which is used to spec
 <span class="ArgType">NUM</span><span class="ArgMeaning">Savefile number</span><div class="Space"></div></div>
 <div class="ContentBody"><p class="Description">
 Returns 1 if the savefile exists, 0 if it does not.</p>
+<div class="Notice"><div class="NoticeHead">
+<b>*</b></div><div class="NoticeBody">Can also be used in the define block in ONScripter-EN.</div></div>
+<hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
+
+<a id="savefileremove"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
+<span class="EngineField"><span class="NoBr">( ONScr-EN<span class="EngineVersion">20240608</span> )</span></span></div>
+<div class="WordName">savefileremove</div></h2><h4><a href="#category_saveload" class="WordCategory">Save/Load</a></h4>
+<h3>savefileremove NUM</h3>
+<div class="Arguments">
+<span class="ArgType">NUM</span><span class="ArgMeaning">Savefile number</span><div class="Space"></div></div>
+<div class="ContentBody"><p class="Description">
+Removes a save file from the save directory, if the file exists.</p>
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="savegame"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Program Block Only]</span></span>
