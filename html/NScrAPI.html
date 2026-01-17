@@ -7742,7 +7742,7 @@ The second form is used when the backdrop for the text window is a graphic file.
 <br>
 By default, the text window takes up the full screen and is somewhat translucent, the font is 26x26 pixels, the spacing is 0,2, the top left coordinate is 8,16, there are 23 2-byte columns and 16 lines, boldface and drop shadow enabled, 20 speed, and a translucent color of #999999.<br>
 <br>
-A more in-depth discription of how to use this command and what exactly its arguments do was requested. This explaination will assume you are using the first method of using this command.<br>
+A more in-depth discription of how to use this command and what exactly its arguments do was requested. This explanation will assume you are using the first method of using this command.<br>
 The final four arguments set the top-left and bottom-right co-ordinates of the shaded, coloured, or transparent area which is the "text window". These co-ordinates are measured from the top-left corner (origin) of the screen in pixels; 0,0 is the top-left.<br>
 The first two arguments set margins in pixels from the left and top sides of the text window before text is drawn; giving a value of 10 for the first argument will cause a 10 pixel margin between the text window and where text is displayed.<br>
 The third and fifth arguments tie in with each other. The third argument sets a number of (full-width) columns of text; this means that when typing half-width characters (such as English), you will have twice this many characters on a line. The fifth argument sets the width in pixels for each of these columns; since they are full-width, there will be half this number of pixels given to each half-width character. Since these two values can be multiplied to work out the total length of a line of text in pixels, it is important that their product is smaller than the width of the text window to prevent an overflow; in other words, ensure that this formula is true: <span class="EngineVersion">number of text columns * text font size X &lt;= window bottom-right X coordinate - window top-left X coordinate</span><br>
@@ -7750,7 +7750,7 @@ If you're using UTF-8 mode in ONScripter-EN, see the command <b>setwindow4</b> f
 The fourth and sixth arguments are the same; they specify the number of lines of text allowed on a page (including wrapped and empty lines) and the height of each character. You should also ensure that this does not overflow the bottom of the text window.<br>
 The text spacing X and Y arguments (7 and 8) cause additional spacing between characters and rows. The rest of the arguments should speak for themselves.</p>
 <div class="Notice"><div class="NoticeHead">
-<b>*</b></div><div class="NoticeBody">(Explaination by Galladite)</div></div>
+<b>*</b></div><div class="NoticeBody">(Explanation by Galladite)</div></div>
 <div class="Example"><span class="ExHeading">Example:</span><br>
 <div class="ExComment">Text window with default settings</div>
 <pre class="ExSource">setwindow 8,16,20,23,26,26,0,2,20,1,1,#999999,0,0,639,479</pre></div>
