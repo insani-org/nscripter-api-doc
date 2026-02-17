@@ -439,6 +439,9 @@
 <a href="#jumpb" title="Program Block Only: jumpb">jumpb</a></span><span class="Function">jump back to the previous ~ symbol</span><div class="Space"></div></div>
 <div class="Word FE"><span class="WordLiteral">
 <a href="#tablegoto" title="Ver.1.99 Definition/Program Block: tablegoto %(num-var), (*label0)[, (*label1),...]">tablegoto</a></span><span class="Function">jump to a label in the table based on the numeric value</span><div class="Space"></div></div>
+<div class="Word FE"><span class="WordLiteral">
+<a href="#tablegosub" title="Latest.Commit Definition/Program Block: tablegosub %(num-var), (*label0)[, (*label1),...]">tablegosub</a></span><span class="Function">jump to a subroutine in the table based on the numeric value</span><div class="Space"></div></div>
+
 
 <a id="category_trap"></a><h5>Click Traps</h5>
 <div class="Word E"><span class="WordLiteral">
@@ -8250,6 +8253,23 @@ Calling <b>systemcall rmenu</b> has the same effect as calling the right-click m
 You'd use this when you wanted right-click menu functionality during a button wait state. Once you exit this right-click menu, the interpreter continues its execution at the command after <b>systemcall</b>.<br>
 (This can leave the screen and the interpreter stack in an inconsistent state, so be careful when using this command.)</p>
 <hr><a href="#rmenu">rmenu</a> / <a href="#automode">automode</a> / <a href="#automode_time">automode_time</a> / 
+<hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
+
+<a id="tablegosub"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
+<span class="EngineField"><span class="NoBr">( Onscripter-EN Commit:<span class="EngineVersion">a3d6b0a</span>)</span></span></div>
+<div class="WordName">tablegosub</div></h2><h4><a href="#category_jump" class="WordCategory">Jumps</a></h4>
+<h3>tablegosub %VAR,LABEL[,LABEL[,...]]</h3>
+<div class="Arguments">
+<span class="ArgType">VAR</span><span class="ArgMeaning">Numeric variable with an index into the jumptable</span><div class="Space"></div>
+<span class="ArgType">LABEL</span><span class="ArgMeaning">A jump destination subroutine within the table</span><div class="Space"></div></div>
+<div class="ContentBody"><p class="Description">
+Creates a jump table.<br>
+If the variable is set to 0, it jumps to the first subroutine; if 1, the second subroutine; and so forth.<br>
+Jumps back to the command directly after the original tablegosub when a return command is encountered.</p>
+<div class="Example"><span class="ExHeading">Example:</span><br>
+<div class="ExComment">Jumps to one of *label0 - *label3, depending on the value of %0</div>
+<pre class="ExSource">tablegosub %0,*label0,*label1,*label2,*label3</pre></div>
+<hr><a href="#gosub">gosub</a> / <a href="#tablegoto">tablegoto</a> /
 <hr><a href="#top">page top</a> / <a href="#LIST">list</a> / <a href="#MAIN">main</a><br></div>
 
 <a id="tablegoto"></a><h2><div class="Support"><span class="WordField"><span class="NoBr">[Definition/Program Block]</span></span>
